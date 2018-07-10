@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>protocol ViewControllerDelegate: class {
+  func delegateMethodHere(_ data: Any)
+}
+
+// Add this to the ViewController
+weak var delegate: ViewControllerDelegate?</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>979C26B2-1EE3-4462-BCAF-7AF2C0F41B97</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>A very short setup for delegate-protocol pattern</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Setup Delegate-Protocol Pattern</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

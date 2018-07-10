@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func scheduleLocalNotification(date: Date, interval: TBLocalNotificationInterval) {
+    
+    let content = UNMutableNotificationContent()
+    content.title = "Reminder"
+    content.subtitle = "reminder to take your meds"
+    content.body = "reminder to take your meds"
+    content.sound = UNNotificationSound.default()
+    
+    var trigger: UNCalendarNotificationTrigger?
+    
+    switch(interval) {
+    case .never:
+      let triggerDate = Calendar.current.dateComponents([.year,.month,.day,.hour,.minute,.second,], from: date)
+      trigger = UNCalendarNotificationTrigger(dateMatching: triggerDate,
+                                              repeats: false)
+      break;
+    case .daily:
+      let triggerDaily = Calendar.current.dateComponents([.hour,.minute,.second,], from: date)
+      trigger = UNCalendarNotificationTrigger(dateMatching: triggerDaily, repeats: true)
+      break;
+    case .weekly:
+      let triggerWeekly = Calendar.current.dateComponents([.weekday,.hour,.minute,.second,], from: date)
+      trigger = UNCalendarNotificationTrigger(dateMatching: triggerWeekly, repeats: true)
+      break;
+    }
+    
+    if let trigger = trigger {
+      let request = UNNotificationRequest(identifier: "com.tellbeth.healthReminder",
+                                          content: content,
+                                          trigger: trigger)
+      
+      UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+      
+    }
+  }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>EADB4CC9-5436-4066-A73A-A54B689BD8D7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>This is a sample function to setup and fire a local notification that gets a date and an interval type to which determines how it repeats</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Schedule a Simple Local Notification</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

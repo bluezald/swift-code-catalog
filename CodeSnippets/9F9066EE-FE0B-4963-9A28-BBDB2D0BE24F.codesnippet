@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import UIKit
+
+class TBAlertViewController: UIViewController {
+
+  @IBOutlet weak var titleLabel: UILabel!
+  @IBOutlet weak var textView: UITextView!
+  @IBOutlet weak var alertView: UIView!
+  @IBOutlet weak var cancelButton: UIButton!
+  @IBOutlet weak var sendButton: UIButton!
+  @IBOutlet weak var deleteButton: UIButton!
+  @IBOutlet weak var deleteButtonWidthConstraint: NSLayoutConstraint!
+  
+  
+  var initialText: String?
+  var sendClosure: ((String, TBAlertViewController) -&gt; Void)?
+  var deleteClosure: ((TBAlertViewController) -&gt; Void)?
+  var cancelClosure: ((TBAlertViewController) -&gt; Void)?
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    self.textView.becomeFirstResponder()
+    
+    self.titleLabel.text = "TBUtilities.Multiline.Title".localized()
+    self.cancelButton.setTitle("TBUtilities.Multiline.Cancel".localized(),
+                               for: .normal)
+    self.sendButton.setTitle("TBUtilities.Multiline.Button".localized(),
+                             for: .normal)
+    
+    self.textView.text = initialText ?? ""
+    
+    self.sendButton.setTitleColor(UIColor(hexString: "ca5a00"), for: .normal)
+    self.cancelButton.setTitleColor(UIColor(hexString: "ca5a00"), for: .normal)
+    self.alertView.backgroundColor = UIColor(hexString: "e5e5e5")
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    setupView()
+    animateView()
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    view.layoutIfNeeded()
+  }
+  
+  func setupView() {
+    alertView.layer.cornerRadius = 15
+    self.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+    if deleteClosure == nil {
+      self.deleteButtonWidthConstraint.constant = 0
+      self.view.setNeedsLayout()
+    } else { // User is Editing 
+      // TODO: Improve handling of alert title text
+      self.titleLabel.text = "TBUtilities.Multiline.EditTitle".localized()
+    }
+  }
+  
+  func animateView() {
+    alertView.alpha = 0;
+    self.alertView.frame.origin.y = self.alertView.frame.origin.y + 50
+    UIView.animate(withDuration: 0.4, animations: { () -&gt; Void in
+      self.alertView.alpha = 1.0;
+      self.alertView.frame.origin.y = self.alertView.frame.origin.y - 50
+    })
+  }
+  
+  @IBAction func cancel(_ sender: Any) {
+    self.textView.resignFirstResponder()
+    
+    if let cancelClosure = self.cancelClosure {
+      cancelClosure(self)
+    } else {
+      self.dismiss(animated: true, completion: nil)
+    }
+  }
+  
+  @IBAction func send(_ sender: Any) {
+    self.textView.resignFirstResponder()
+    
+    if let sendClosure = self.sendClosure {
+      sendClosure(textView.text, self)
+    }
+  }
+  
+  @IBAction func deleta(_ sender: Any) {
+    if let deleteClosure = self.deleteClosure {
+      deleteClosure(self)
+    }
+  }
+  
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9F9066EE-FE0B-4963-9A28-BBDB2D0BE24F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>This is a custom alert view class, potential to become a template. The code is still from the Tellbeth code</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Potential Custom Alert View Template</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

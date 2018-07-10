@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>if let dict = Bundle.main.infoDictionary {
+      if let version = dict["CFBundleShortVersionString"] as? String,
+        let bundleVersion = dict["CFBundleVersion"] as? String,
+        let appName = dict["CFBundleName"] as? String {
+        print("You're using \(appName) v\(version) (Build \(bundleVersion)).")
+      }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>39A6E8E0-605A-4BE3-8EEA-C829E7AA20C7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>prints the bundle's app name, short version representation and version number</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Print App Name, Version and Bundle Version</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

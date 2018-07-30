@@ -2,13 +2,20 @@
 
 is a collection of common functionalities in iOS applications, bundle together to form a 'sort-of' catalog for easy viewing and easy copy-pasting to your projects. 
 
-# Xcode Project
+# Standard Xcode Project
 
 This will consist an Xcode project with an iPhone Application (primarily and hopefully will add iPad support), categorised into different patterns such as tableview, camera, collection and more.
+
+# Reactive Xcode Project
+
+This will consist also a reactive version of the standard catalog
 
 ## Code Snippets
 
 For short code snippets, i'll be constructing this one to a more categorized collections. From common design patterns to common table view code, alert controller, etc.
+
+Usage:
+Add Snippets to your: ~/Library/Developer/Xcode/UserData/CodeSnippets
 
 ### Design Patterns
 #### Creational design patterns

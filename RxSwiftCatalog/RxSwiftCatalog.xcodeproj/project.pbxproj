@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		319BA7B56A7C910770E1DF05 /* Pods_RxSwiftCatalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B445C58F6D45723FB4CA2F8E /* Pods_RxSwiftCatalog.framework */; };
+		4F999A0D21108392004E5715 /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F999A0C21108392004E5715 /* SimpleTableViewController.swift */; };
+		4F999A10211083D6004E5715 /* RCPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F999A0F211083D6004E5715 /* RCPerson.swift */; };
 		4FE28B3120FEDBF70038D9D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE28B3020FEDBF70038D9D8 /* AppDelegate.swift */; };
 		4FE28B3320FEDBF70038D9D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE28B3220FEDBF70038D9D8 /* ViewController.swift */; };
 		4FE28B3620FEDBF70038D9D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE28B3420FEDBF70038D9D8 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		06EDF7236467A7FF923E48AF /* Pods-RxSwiftCatalog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftCatalog.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftCatalog/Pods-RxSwiftCatalog.release.xcconfig"; sourceTree = "<group>"; };
 		1921E1458B9B56076058297F /* Pods-RxSwiftCatalogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftCatalogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftCatalogTests/Pods-RxSwiftCatalogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F999A0C21108392004E5715 /* SimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
+		4F999A0F211083D6004E5715 /* RCPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCPerson.swift; sourceTree = "<group>"; };
 		4FE28B2D20FEDBF70038D9D8 /* RxSwiftCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE28B3020FEDBF70038D9D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FE28B3220FEDBF70038D9D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4F999A0921108148004E5715 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				4F999A0C21108392004E5715 /* SimpleTableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		4F999A0B21108229004E5715 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4F999A0F211083D6004E5715 /* RCPerson.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4F999A0E211083BD004E5715 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4F999A0921108148004E5715 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4FE28B2420FEDBF70038D9D8 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +137,8 @@
 		4FE28B2F20FEDBF70038D9D8 /* RxSwiftCatalog */ = {
 			isa = PBXGroup;
 			children = (
+				4F999A0B21108229004E5715 /* Models */,
+				4F999A0E211083BD004E5715 /* Views */,
 				4FE28B3020FEDBF70038D9D8 /* AppDelegate.swift */,
 				4FE28B3220FEDBF70038D9D8 /* ViewController.swift */,
 				4FE28B3420FEDBF70038D9D8 /* Main.storyboard */,
@@ -295,6 +325,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F999A0D21108392004E5715 /* SimpleTableViewController.swift in Sources */,
+				4F999A10211083D6004E5715 /* RCPerson.swift in Sources */,
 				4FE28B3320FEDBF70038D9D8 /* ViewController.swift in Sources */,
 				4FE28B3120FEDBF70038D9D8 /* AppDelegate.swift in Sources */,
 			);

@@ -58,6 +58,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FC8460A21460245008EDB94 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		4FC8460B2146024F008EDB94 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		4FC8460C21460405008EDB94 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		4FC8460D214615EB008EDB94 /* ARC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ARC;
+			sourceTree = "<group>";
+		};
 		4FE28B5020FEDC220038D9D8 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +107,10 @@
 		4FE28B5B20FEDC220038D9D8 /* StandardCatalog */ = {
 			isa = PBXGroup;
 			children = (
+				4FC8460D214615EB008EDB94 /* ARC */,
+				4FC8460C21460405008EDB94 /* GCD */,
+				4FC8460B2146024F008EDB94 /* CollectionView */,
+				4FC8460A21460245008EDB94 /* TableView */,
 				4FF419192105F9C00086CFB7 /* VisualEffect */,
 				4FE28B5C20FEDC220038D9D8 /* AppDelegate.swift */,
 				4FE28B5E20FEDC220038D9D8 /* ViewController.swift */,

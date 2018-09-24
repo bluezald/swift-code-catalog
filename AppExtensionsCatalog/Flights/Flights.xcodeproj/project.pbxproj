@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F64D25D214FBDDE0047B386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D25C214FBDDE0047B386 /* AppDelegate.swift */; };
+		4F64D25F214FBDDE0047B386 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D25E214FBDDE0047B386 /* ViewController.swift */; };
+		4F64D262214FBDDE0047B386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F64D260214FBDDE0047B386 /* Main.storyboard */; };
+		4F64D264214FBDDF0047B386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F64D263214FBDDF0047B386 /* Assets.xcassets */; };
+		4F64D267214FBDDF0047B386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F64D265214FBDDF0047B386 /* LaunchScreen.storyboard */; };
+		4F64D26C214FBDDF0047B386 /* Flights WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4F64D26B214FBDDF0047B386 /* Flights WatchKit App.app */; };
+		4F64D272214FBDDF0047B386 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F64D270214FBDDF0047B386 /* Interface.storyboard */; };
+		4F64D274214FBDE00047B386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F64D273214FBDE00047B386 /* Assets.xcassets */; };
+		4F64D27B214FBDE00047B386 /* Flights WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4F64D27A214FBDE00047B386 /* Flights WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4F64D282214FBDE00047B386 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D281214FBDE00047B386 /* ExtensionDelegate.swift */; };
+		4F64D284214FBDE10047B386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F64D283214FBDE10047B386 /* Assets.xcassets */; };
+		4F64D297214FBE1D0047B386 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D295214FBE1C0047B386 /* Flight.swift */; };
+		4F64D298214FBE1D0047B386 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D295214FBE1C0047B386 /* Flight.swift */; };
+		4F64D299214FBE1D0047B386 /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F64D296214FBE1C0047B386 /* Flights.json */; };
+		4F64D29A214FBE1D0047B386 /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F64D296214FBE1C0047B386 /* Flights.json */; };
+		4F64D29B214FBE1D0047B386 /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F64D296214FBE1C0047B386 /* Flights.json */; };
+		4F64D2A0214FBEC00047B386 /* ScheduleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D29C214FBEBF0047B386 /* ScheduleInterfaceController.swift */; };
+		4F64D2A1214FBEC00047B386 /* ScheduleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D29C214FBEBF0047B386 /* ScheduleInterfaceController.swift */; };
+		4F64D2A2214FBEC00047B386 /* FlightInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D29D214FBEBF0047B386 /* FlightInterfaceController.swift */; };
+		4F64D2A3214FBEC00047B386 /* FlightInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D29D214FBEBF0047B386 /* FlightInterfaceController.swift */; };
+		4F64D2A4214FBEC00047B386 /* CheckInInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D29E214FBEBF0047B386 /* CheckInInterfaceController.swift */; };
+		4F64D2A5214FBEC00047B386 /* CheckInInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D29E214FBEBF0047B386 /* CheckInInterfaceController.swift */; };
+		4F64D2A6214FBEC00047B386 /* FlightRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D29F214FBEC00047B386 /* FlightRowController.swift */; };
+		4F64D2A7214FBEC00047B386 /* FlightRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64D29F214FBEC00047B386 /* FlightRowController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F64D26D214FBDDF0047B386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F64D251214FBDDE0047B386 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F64D26A214FBDDF0047B386;
+			remoteInfo = "Flights WatchKit App";
+		};
+		4F64D27C214FBDE00047B386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F64D251214FBDDE0047B386 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F64D279214FBDE00047B386;
+			remoteInfo = "Flights WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F64D28B214FBDE10047B386 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4F64D27B214FBDE00047B386 /* Flights WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F64D28F214FBDE10047B386 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4F64D26C214FBDDF0047B386 /* Flights WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4F64D259214FBDDE0047B386 /* Flights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flights.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F64D25C214FBDDE0047B386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4F64D25E214FBDDE0047B386 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F64D261214FBDDE0047B386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F64D263214FBDDF0047B386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F64D266214FBDDF0047B386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F64D268214FBDDF0047B386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F64D26B214FBDDF0047B386 /* Flights WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flights WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F64D271214FBDDF0047B386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4F64D273214FBDE00047B386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F64D275214FBDE00047B386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F64D27A214FBDE00047B386 /* Flights WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Flights WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F64D281214FBDE00047B386 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		4F64D283214FBDE10047B386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F64D285214FBDE10047B386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F64D295214FBE1C0047B386 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		4F64D296214FBE1C0047B386 /* Flights.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Flights.json; sourceTree = "<group>"; };
+		4F64D29C214FBEBF0047B386 /* ScheduleInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleInterfaceController.swift; sourceTree = "<group>"; };
+		4F64D29D214FBEBF0047B386 /* FlightInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInterfaceController.swift; sourceTree = "<group>"; };
+		4F64D29E214FBEBF0047B386 /* CheckInInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInInterfaceController.swift; sourceTree = "<group>"; };
+		4F64D29F214FBEC00047B386 /* FlightRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightRowController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F64D256214FBDDE0047B386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F64D277214FBDE00047B386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F64D250214FBDDE0047B386 = {
+			isa = PBXGroup;
+			children = (
+				4F64D293214FBE010047B386 /* Shared */,
+				4F64D25B214FBDDE0047B386 /* Flights */,
+				4F64D26F214FBDDF0047B386 /* Flights WatchKit App */,
+				4F64D27E214FBDE00047B386 /* Flights WatchKit Extension */,
+				4F64D25A214FBDDE0047B386 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F64D25A214FBDDE0047B386 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F64D259214FBDDE0047B386 /* Flights.app */,
+				4F64D26B214FBDDF0047B386 /* Flights WatchKit App.app */,
+				4F64D27A214FBDE00047B386 /* Flights WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F64D25B214FBDDE0047B386 /* Flights */ = {
+			isa = PBXGroup;
+			children = (
+				4F64D25C214FBDDE0047B386 /* AppDelegate.swift */,
+				4F64D25E214FBDDE0047B386 /* ViewController.swift */,
+				4F64D260214FBDDE0047B386 /* Main.storyboard */,
+				4F64D263214FBDDF0047B386 /* Assets.xcassets */,
+				4F64D265214FBDDF0047B386 /* LaunchScreen.storyboard */,
+				4F64D268214FBDDF0047B386 /* Info.plist */,
+			);
+			path = Flights;
+			sourceTree = "<group>";
+		};
+		4F64D26F214FBDDF0047B386 /* Flights WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				4F64D270214FBDDF0047B386 /* Interface.storyboard */,
+				4F64D273214FBDE00047B386 /* Assets.xcassets */,
+				4F64D275214FBDE00047B386 /* Info.plist */,
+			);
+			path = "Flights WatchKit App";
+			sourceTree = "<group>";
+		};
+		4F64D27E214FBDE00047B386 /* Flights WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4F64D281214FBDE00047B386 /* ExtensionDelegate.swift */,
+				4F64D29E214FBEBF0047B386 /* CheckInInterfaceController.swift */,
+				4F64D29D214FBEBF0047B386 /* FlightInterfaceController.swift */,
+				4F64D29F214FBEC00047B386 /* FlightRowController.swift */,
+				4F64D29C214FBEBF0047B386 /* ScheduleInterfaceController.swift */,
+				4F64D283214FBDE10047B386 /* Assets.xcassets */,
+				4F64D285214FBDE10047B386 /* Info.plist */,
+			);
+			path = "Flights WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		4F64D293214FBE010047B386 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4F64D295214FBE1C0047B386 /* Flight.swift */,
+				4F64D296214FBE1C0047B386 /* Flights.json */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F64D258214FBDDE0047B386 /* Flights */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F64D290214FBDE10047B386 /* Build configuration list for PBXNativeTarget "Flights" */;
+			buildPhases = (
+				4F64D255214FBDDE0047B386 /* Sources */,
+				4F64D256214FBDDE0047B386 /* Frameworks */,
+				4F64D257214FBDDE0047B386 /* Resources */,
+				4F64D28F214FBDE10047B386 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F64D26E214FBDDF0047B386 /* PBXTargetDependency */,
+			);
+			name = Flights;
+			productName = Flights;
+			productReference = 4F64D259214FBDDE0047B386 /* Flights.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F64D26A214FBDDF0047B386 /* Flights WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F64D28C214FBDE10047B386 /* Build configuration list for PBXNativeTarget "Flights WatchKit App" */;
+			buildPhases = (
+				4F64D269214FBDDF0047B386 /* Resources */,
+				4F64D28B214FBDE10047B386 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F64D27D214FBDE00047B386 /* PBXTargetDependency */,
+			);
+			name = "Flights WatchKit App";
+			productName = "Flights WatchKit App";
+			productReference = 4F64D26B214FBDDF0047B386 /* Flights WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		4F64D279214FBDE00047B386 /* Flights WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F64D288214FBDE10047B386 /* Build configuration list for PBXNativeTarget "Flights WatchKit Extension" */;
+			buildPhases = (
+				4F64D276214FBDE00047B386 /* Sources */,
+				4F64D277214FBDE00047B386 /* Frameworks */,
+				4F64D278214FBDE00047B386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flights WatchKit Extension";
+			productName = "Flights WatchKit Extension";
+			productReference = 4F64D27A214FBDE00047B386 /* Flights WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F64D251214FBDDE0047B386 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = CommandBin;
+				TargetAttributes = {
+					4F64D258214FBDDE0047B386 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					4F64D26A214FBDDF0047B386 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+					4F64D279214FBDE00047B386 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 4F64D254214FBDDE0047B386 /* Build configuration list for PBXProject "Flights" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F64D250214FBDDE0047B386;
+			productRefGroup = 4F64D25A214FBDDE0047B386 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F64D258214FBDDE0047B386 /* Flights */,
+				4F64D26A214FBDDF0047B386 /* Flights WatchKit App */,
+				4F64D279214FBDE00047B386 /* Flights WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F64D257214FBDDE0047B386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F64D267214FBDDF0047B386 /* LaunchScreen.storyboard in Resources */,
+				4F64D299214FBE1D0047B386 /* Flights.json in Resources */,
+				4F64D264214FBDDF0047B386 /* Assets.xcassets in Resources */,
+				4F64D262214FBDDE0047B386 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F64D269214FBDDF0047B386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F64D274214FBDE00047B386 /* Assets.xcassets in Resources */,
+				4F64D29A214FBE1D0047B386 /* Flights.json in Resources */,
+				4F64D272214FBDDF0047B386 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F64D278214FBDE00047B386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F64D284214FBDE10047B386 /* Assets.xcassets in Resources */,
+				4F64D29B214FBE1D0047B386 /* Flights.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F64D255214FBDDE0047B386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F64D2A4214FBEC00047B386 /* CheckInInterfaceController.swift in Sources */,
+				4F64D2A2214FBEC00047B386 /* FlightInterfaceController.swift in Sources */,
+				4F64D297214FBE1D0047B386 /* Flight.swift in Sources */,
+				4F64D2A6214FBEC00047B386 /* FlightRowController.swift in Sources */,
+				4F64D25F214FBDDE0047B386 /* ViewController.swift in Sources */,
+				4F64D2A0214FBEC00047B386 /* ScheduleInterfaceController.swift in Sources */,
+				4F64D25D214FBDDE0047B386 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F64D276214FBDE00047B386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F64D2A1214FBEC00047B386 /* ScheduleInterfaceController.swift in Sources */,
+				4F64D2A3214FBEC00047B386 /* FlightInterfaceController.swift in Sources */,
+				4F64D2A7214FBEC00047B386 /* FlightRowController.swift in Sources */,
+				4F64D298214FBE1D0047B386 /* Flight.swift in Sources */,
+				4F64D282214FBDE00047B386 /* ExtensionDelegate.swift in Sources */,
+				4F64D2A5214FBEC00047B386 /* CheckInInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F64D26E214FBDDF0047B386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F64D26A214FBDDF0047B386 /* Flights WatchKit App */;
+			targetProxy = 4F64D26D214FBDDF0047B386 /* PBXContainerItemProxy */;
+		};
+		4F64D27D214FBDE00047B386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F64D279214FBDE00047B386 /* Flights WatchKit Extension */;
+			targetProxy = 4F64D27C214FBDE00047B386 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F64D260214FBDDE0047B386 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F64D261214FBDDE0047B386 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4F64D265214FBDDF0047B386 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F64D266214FBDDF0047B386 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4F64D270214FBDDF0047B386 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F64D271214FBDDF0047B386 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F64D286214FBDE10047B386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F64D287214FBDE10047B386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F64D289214FBDE10047B386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Flights WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.commandbin.Flights.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		4F64D28A214FBDE10047B386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Flights WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.commandbin.Flights.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		4F64D28D214FBDE10047B386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Flights_WatchKit_Extension;
+				INFOPLIST_FILE = "Flights WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.commandbin.Flights.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Flights WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		4F64D28E214FBDE10047B386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Flights_WatchKit_Extension;
+				INFOPLIST_FILE = "Flights WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.commandbin.Flights.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/Flights WatchKit App-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		4F64D291214FBDE10047B386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Flights/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.commandbin.Flights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F64D292214FBDE10047B386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Flights/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.commandbin.Flights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F64D254214FBDDE0047B386 /* Build configuration list for PBXProject "Flights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F64D286214FBDE10047B386 /* Debug */,
+				4F64D287214FBDE10047B386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F64D288214FBDE10047B386 /* Build configuration list for PBXNativeTarget "Flights WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F64D289214FBDE10047B386 /* Debug */,
+				4F64D28A214FBDE10047B386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F64D28C214FBDE10047B386 /* Build configuration list for PBXNativeTarget "Flights WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F64D28D214FBDE10047B386 /* Debug */,
+				4F64D28E214FBDE10047B386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F64D290214FBDE10047B386 /* Build configuration list for PBXNativeTarget "Flights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F64D291214FBDE10047B386 /* Debug */,
+				4F64D292214FBDE10047B386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F64D251214FBDDE0047B386 /* Project object */;
+}

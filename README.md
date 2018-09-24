@@ -2,6 +2,9 @@
 
 is a collection of common functionalities in iOS applications, bundle together to form a 'sort-of' catalog for easy viewing and easy copy-pasting to your projects. 
 
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+
+
 # Standard Xcode Project
 
 This will consist an Xcode project with an iPhone Application (primarily and hopefully will add iPad support), categorised into different patterns such as tableview, camera, collection and more.

@@ -26,8 +26,20 @@ extension MainViewController {
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-    let controller = SimpleTableViewController()
-    self.navigationController?.pushViewController(controller, animated: true)
+    switch indexPath.section {
+    case 0: // Table Views
+      switch indexPath.row {
+      case 0: // Simple Table View
+        let controller = SimpleTableViewController()
+        self.navigationController?.pushViewController(controller, animated: true)
+      default:
+        break
+      }
+    default:
+      break
+    }
+    
+    
     
   }
   

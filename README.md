@@ -3,6 +3,7 @@
 is a collection of common functionalities in iOS applications, bundle together to form a 'sort-of' catalog for easy viewing and easy copy-pasting to your projects. 
 
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.com/bluezald/swift-code-catalog.svg?branch=master)](https://travis-ci.com/bluezald/swift-code-catalog)
 
 
 # Standard Xcode Project

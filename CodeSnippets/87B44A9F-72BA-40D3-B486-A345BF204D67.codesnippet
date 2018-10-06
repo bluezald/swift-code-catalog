@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let url = URL(string: "")
+    
+    let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
+      
+      if let data = data {
+        let json = try? JSONSerialization.jsonObject(with: data, options: [])
+        
+        if let dictionary = json as? [String: Any] {
+          
+        }
+        
+        completion(subjectToGDPR)
+      } else {
+        completion(subjectToGDPR)
+      }
+    }
+    
+    task.resume()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>87B44A9F-72BA-40D3-B486-A345BF204D67</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>a simple URLSession Data task to get a response from a remote URL</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Simple URL Session Data Task</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

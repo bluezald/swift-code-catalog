@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;key&gt;NSAppTransportSecurity&lt;/key&gt;
+  &lt;dict&gt;
+    &lt;key&gt;NSAllowsArbitraryLoads&lt;/key&gt;
+    &lt;true/&gt;
+  &lt;/dict&gt;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>373B7A3E-9C9A-4886-A152-37ECE9C1FFC0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>This is not recommended, but when you add this to Info.plist, this will allow loading even in a non-secure load like http:</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>App Transport Security allow Arbritary Loads</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

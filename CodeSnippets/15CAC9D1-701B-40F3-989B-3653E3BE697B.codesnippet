@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// MARK: Remote Loading of Images
+extension UIImageView {
+  
+  func loadImageFromURLString(_ urlString: String) {
+    
+    let url = URL(string: urlString)!
+    
+    DispatchQueue.global().async {
+      
+      do {
+        let data = try Data(contentsOf: url)
+        DispatchQueue.main.async {
+          self.image = UIImage(data: data)
+        }
+      } catch {
+        // Unable to load image from URL
+        // TODO: Add Handling here
+      }
+    }
+  }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>15CAC9D1-701B-40F3-989B-3653E3BE697B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Custom UIImageView extension that loads image from a URL String</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Load Image from URL String</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

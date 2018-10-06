@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let dateAsString = "07:05:45 PM"
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "h:mm:ss a"
+    let date = dateFormatter.date(from: dateAsString)
+    
+    dateFormatter.dateFormat = "HH:mm:ss"
+    let date24 = dateFormatter.string(from: date!)
+    print(date24)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>792B364A-832E-47E6-B4EA-79B3F83D135D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Converts a 12-hour format date to a 24 hour format date</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Convert 12-hour Date to 24-hour Date</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

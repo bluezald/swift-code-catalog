@@ -41,11 +41,11 @@ See full list [here](https://developer.apple.com/library/archive/documentation/G
 
 For short code snippets, i'll be constructing this one to a more categorized collections. From common design patterns to common table view code, alert controller, etc.
 
+![Code Snippets](https://raw.githubusercontent.com/bluezald/swift-code-catalog/master/Documentation/Resources/snippets-preview.png)
+
+Right now, the code snippets are in random, but I find using this small codes throughout my development. I'll be refining them, and if I see code snippets that can belong to utility classes, then I'll remove it from the snippets and add it accordingly to a class in a standard catalog.
+
+Todo: Design Patterns code snippets will be in the Design Patterns repo
+
 Usage:
 Add Snippets to your: ~/Library/Developer/Xcode/UserData/CodeSnippets
-
-### UITableView
-- No Content yet.
-### UIColor
-- No Content yet.
-

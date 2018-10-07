@@ -8,13 +8,18 @@ is a collection of common functionalities in iOS applications, bundle together t
 
 # Standard Xcode Project
 
-This will consist an Xcode project with an iPhone Application (primarily and hopefully will add iPad support), categorised into different patterns such as tableview, camera, collection and more.
+This will consist an Xcode project with an iPhone Application (primarily and hopefully will add iPad support), categorised into different patterns such as tableview, camera, collection and more. (Will work on how this project is organized).
+
+<mark>Note: Im integrating [swiftlint](https://github.com/realm/SwiftLint) to force a cleaner code</mark>
+
 
 # Reactive Xcode Project
 
 This will consist also a reactive version of the standard catalog
 
 # App Extensions Catalog
+
+An app extension lets you extend custom functionality and content beyond your app and make it available to users while they’re interacting with other apps or the system. Under this repo also, are multiple projects previewing iOS app extensions.
 
 | Extension point                               | Typical app extension functionality                                                                                                                                                                                                                                                                       |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

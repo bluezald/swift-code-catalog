@@ -66,6 +66,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F7F13B421722ED0004EE508 /* Fundamentals */ = {
+			isa = PBXGroup;
+			children = (
+				4F90D0B9216907C900A11F5D /* Date */,
+				4FC5D52F215884E2001B917F /* Mapping */,
+				4FC8460D214615EB008EDB94 /* ARC */,
+				4FC8460C21460405008EDB94 /* GCD */,
+			);
+			path = Fundamentals;
+			sourceTree = "<group>";
+		};
+		4F7F13B521722F29004EE508 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				4FC8460B2146024F008EDB94 /* CollectionView */,
+				4FC8460A21460245008EDB94 /* TableView */,
+				4FF419192105F9C00086CFB7 /* VisualEffect */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		4F90D0B9216907C900A11F5D /* Date */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,13 +156,8 @@
 		4FE28B5B20FEDC220038D9D8 /* StandardCatalog */ = {
 			isa = PBXGroup;
 			children = (
-				4F90D0B9216907C900A11F5D /* Date */,
-				4FC5D52F215884E2001B917F /* Mapping */,
-				4FC8460D214615EB008EDB94 /* ARC */,
-				4FC8460C21460405008EDB94 /* GCD */,
-				4FC8460B2146024F008EDB94 /* CollectionView */,
-				4FC8460A21460245008EDB94 /* TableView */,
-				4FF419192105F9C00086CFB7 /* VisualEffect */,
+				4F7F13B521722F29004EE508 /* UIKit */,
+				4F7F13B421722ED0004EE508 /* Fundamentals */,
 				4FE28B5C20FEDC220038D9D8 /* AppDelegate.swift */,
 				4FE28B5E20FEDC220038D9D8 /* MainViewController.swift */,
 				4FE28B6020FEDC220038D9D8 /* Main.storyboard */,
@@ -282,7 +298,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "#if which swiftlint >/dev/null; then\n# swiftlint\n#else\n#    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

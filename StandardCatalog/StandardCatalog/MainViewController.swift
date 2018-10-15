@@ -32,6 +32,9 @@ extension MainViewController {
       case 0: // Simple Table View
         let controller = SimpleTableViewController()
         self.navigationController?.pushViewController(controller, animated: true)
+      case 1:
+        let controller = SimpleSearchTableViewController()
+        self.navigationController?.pushViewController(controller, animated: true)
       default:
         break
       }

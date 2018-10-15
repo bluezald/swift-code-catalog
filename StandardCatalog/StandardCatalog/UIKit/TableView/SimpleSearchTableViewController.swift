@@ -1,14 +1,14 @@
 //
-//  SimpleTableViewController.swift
+//  SimpleSearchTableViewController.swift
 //  StandardCatalog
 //
-//  Created by Vincent Bacalso on 01/10/2018.
+//  Created by Vincent Bacalso on 15/10/2018.
 //  Copyright © 2018 CommandBin. All rights reserved.
 //
 
 import UIKit
 
-class SimpleTableViewController: UITableViewController {
+class SimpleSearchTableViewController: UITableViewController {
   
   var items = Datasource.items
   
@@ -20,7 +20,7 @@ class SimpleTableViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return items.count
   }
-
+  
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
     cell.textLabel?.text = items[indexPath.row]

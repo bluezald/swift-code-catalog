@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4F67D0282161F50400027E7B /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67D0272161F50400027E7B /* SimpleTableViewController.swift */; };
+		4FC0C9912174A4E200F8AF92 /* SimpleSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0C9902174A4E200F8AF92 /* SimpleSearchTableViewController.swift */; };
+		4FC0C9942174A52500F8AF92 /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0C9932174A52500F8AF92 /* Datasource.swift */; };
 		4FC8461021463839008EDB94 /* ARC.md in Resources */ = {isa = PBXBuildFile; fileRef = 4FC8460F21463839008EDB94 /* ARC.md */; };
 		4FE28B5D20FEDC220038D9D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE28B5C20FEDC220038D9D8 /* AppDelegate.swift */; };
 		4FE28B5F20FEDC220038D9D8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE28B5E20FEDC220038D9D8 /* MainViewController.swift */; };
@@ -33,6 +35,8 @@
 		4F6123EA21588B8400AC204A /* GCD.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GCD.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4F67D0272161F50400027E7B /* SimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
 		4F90D0BA2169080C00A11F5D /* Date.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Date.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4FC0C9902174A4E200F8AF92 /* SimpleSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSearchTableViewController.swift; sourceTree = "<group>"; };
+		4FC0C9932174A52500F8AF92 /* Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
 		4FC8460E214637FE008EDB94 /* ARC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ARC.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4FC8460F21463839008EDB94 /* ARC.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ARC.md; sourceTree = "<group>"; };
 		4FE28B5920FEDC220038D9D8 /* StandardCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandardCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +99,35 @@
 			path = Date;
 			sourceTree = "<group>";
 		};
+		4FC0C9922174A50700F8AF92 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4FC0C9932174A52500F8AF92 /* Datasource.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4FC0C9952174A62700F8AF92 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4FC0C9962174A71B00F8AF92 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		4FC0C9972174A73700F8AF92 /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Caching;
+			sourceTree = "<group>";
+		};
 		4FC5D52F215884E2001B917F /* Mapping */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				4F67D0272161F50400027E7B /* SimpleTableViewController.swift */,
+				4FC0C9902174A4E200F8AF92 /* SimpleSearchTableViewController.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -156,6 +190,10 @@
 		4FE28B5B20FEDC220038D9D8 /* StandardCatalog */ = {
 			isa = PBXGroup;
 			children = (
+				4FC0C9922174A50700F8AF92 /* Shared */,
+				4FC0C9972174A73700F8AF92 /* Caching */,
+				4FC0C9962174A71B00F8AF92 /* Animations */,
+				4FC0C9952174A62700F8AF92 /* Networking */,
 				4F7F13B521722F29004EE508 /* UIKit */,
 				4F7F13B421722ED0004EE508 /* Fundamentals */,
 				4FE28B5C20FEDC220038D9D8 /* AppDelegate.swift */,
@@ -307,8 +345,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FC0C9942174A52500F8AF92 /* Datasource.swift in Sources */,
 				4FE28B5F20FEDC220038D9D8 /* MainViewController.swift in Sources */,
 				4FF4191B2105FAAE0086CFB7 /* VisualEffectViewController.swift in Sources */,
+				4FC0C9912174A4E200F8AF92 /* SimpleSearchTableViewController.swift in Sources */,
 				4FE28B5D20FEDC220038D9D8 /* AppDelegate.swift in Sources */,
 				4F67D0282161F50400027E7B /* SimpleTableViewController.swift in Sources */,
 			);

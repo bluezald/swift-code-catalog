@@ -42,6 +42,8 @@ extension MainViewController {
       switch indexPath.row {
       case 0:
         controller = ListViewController()
+      case 1:
+        controller = ProfileViewController()
       default:
         break
       }

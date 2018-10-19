@@ -6,4 +6,10 @@
 //  Copyright © 2018 CommandBin. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class ProfileViewController: UIViewController {
+  
+  
+  
+}

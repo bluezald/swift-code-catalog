@@ -26,15 +26,22 @@ extension MainViewController {
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
+    var controller: UIViewController?
+    
     switch indexPath.section {
     case 0: // Table Views
       switch indexPath.row {
       case 0: // Simple Table View
-        let controller = SimpleTableViewController()
-        self.navigationController?.pushViewController(controller, animated: true)
+        controller = SimpleTableViewController()
       case 1:
-        let controller = SimpleSearchTableViewController()
-        self.navigationController?.pushViewController(controller, animated: true)
+        controller = SimpleSearchTableViewController()
+      default:
+        break
+      }
+    case 2:
+      switch indexPath.row {
+      case 0:
+        controller = ListViewController()
       default:
         break
       }
@@ -42,6 +49,9 @@ extension MainViewController {
       break
     }
     
+    if let controller = controller {
+      self.navigationController?.pushViewController(controller, animated: true)
+    }
     
     
   }

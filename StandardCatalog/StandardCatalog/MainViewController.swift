@@ -43,7 +43,7 @@ extension MainViewController {
       case 0:
         controller = ListViewController()
       case 1:
-        controller = ProfileViewController()
+        controller = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController")
       default:
         break
       }

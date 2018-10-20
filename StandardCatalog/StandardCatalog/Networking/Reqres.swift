@@ -14,7 +14,7 @@ struct Reqres {
   static let domain = "https://reqres.in"
   
   static let users = 	"/api/users?page=2"
-  static let user = "/api/users/2"
+  static let user = "/api/users/"
   
   // Create, Update, Patch, Delete
   

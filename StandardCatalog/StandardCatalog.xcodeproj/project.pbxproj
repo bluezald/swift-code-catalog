@@ -14,6 +14,7 @@
 		4FC8461021463839008EDB94 /* ARC.md in Resources */ = {isa = PBXBuildFile; fileRef = 4FC8460F21463839008EDB94 /* ARC.md */; };
 		4FCFE21F2179AA53001E1879 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFE21E2179AA53001E1879 /* User.swift */; };
 		4FCFE277217CA82F001E1879 /* SimpleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFE276217CA82F001E1879 /* SimpleCollectionViewController.swift */; };
+		4FCFE27A217CC2B8001E1879 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFE279217CC2B8001E1879 /* ContactsViewController.swift */; };
 		4FDB69912176EB3C0017383F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDB69902176EB3C0017383F /* ListViewController.swift */; };
 		4FDB69932176EB500017383F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDB69922176EB500017383F /* ProfileViewController.swift */; };
 		4FE28B5D20FEDC220038D9D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE28B5C20FEDC220038D9D8 /* AppDelegate.swift */; };
@@ -47,6 +48,7 @@
 		4FC8460F21463839008EDB94 /* ARC.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ARC.md; sourceTree = "<group>"; };
 		4FCFE21E2179AA53001E1879 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4FCFE276217CA82F001E1879 /* SimpleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewController.swift; sourceTree = "<group>"; };
+		4FCFE279217CC2B8001E1879 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		4FDB69902176EB3C0017383F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		4FDB69922176EB500017383F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4FE28B5920FEDC220038D9D8 /* StandardCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandardCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,6 +194,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4FCFE278217CC1E1001E1879 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				4FCFE279217CC2B8001E1879 /* ContactsViewController.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
 		4FE28B5020FEDC220038D9D8 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +226,7 @@
 				4FC0C9922174A50700F8AF92 /* Shared */,
 				4F7F13B421722ED0004EE508 /* Fundamentals */,
 				4FC0C9972174A73700F8AF92 /* Caching */,
+				4FCFE278217CC1E1001E1879 /* Contacts */,
 				4F7F13B521722F29004EE508 /* UIKit */,
 				4FC0C9962174A71B00F8AF92 /* Animations */,
 				4FC0C9952174A62700F8AF92 /* Networking */,
@@ -373,6 +384,7 @@
 				4FF4191B2105FAAE0086CFB7 /* VisualEffectViewController.swift in Sources */,
 				4F9F0134217826A100C0F41C /* Reqres.swift in Sources */,
 				4FC0C9912174A4E200F8AF92 /* SimpleSearchTableViewController.swift in Sources */,
+				4FCFE27A217CC2B8001E1879 /* ContactsViewController.swift in Sources */,
 				4FE28B5D20FEDC220038D9D8 /* AppDelegate.swift in Sources */,
 				4F67D0282161F50400027E7B /* SimpleTableViewController.swift in Sources */,
 				4FDB69932176EB500017383F /* ProfileViewController.swift in Sources */,

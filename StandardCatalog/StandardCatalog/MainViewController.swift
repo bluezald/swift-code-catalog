@@ -38,6 +38,13 @@ extension MainViewController {
       default:
         break
       }
+    case 1:
+      switch indexPath.row {
+      case 0:
+        controller = self.storyboard?.instantiateViewController(withIdentifier: "SimpleCollectionViewController")
+      default:
+        break
+      }
     case 2:
       switch indexPath.row {
       case 0:

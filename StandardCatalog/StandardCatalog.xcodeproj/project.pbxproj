@@ -13,6 +13,7 @@
 		4FC0C9942174A52500F8AF92 /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0C9932174A52500F8AF92 /* Datasource.swift */; };
 		4FC8461021463839008EDB94 /* ARC.md in Resources */ = {isa = PBXBuildFile; fileRef = 4FC8460F21463839008EDB94 /* ARC.md */; };
 		4FCFE21F2179AA53001E1879 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFE21E2179AA53001E1879 /* User.swift */; };
+		4FCFE277217CA82F001E1879 /* SimpleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFE276217CA82F001E1879 /* SimpleCollectionViewController.swift */; };
 		4FDB69912176EB3C0017383F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDB69902176EB3C0017383F /* ListViewController.swift */; };
 		4FDB69932176EB500017383F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDB69922176EB500017383F /* ProfileViewController.swift */; };
 		4FE28B5D20FEDC220038D9D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE28B5C20FEDC220038D9D8 /* AppDelegate.swift */; };
@@ -45,6 +46,7 @@
 		4FC8460E214637FE008EDB94 /* ARC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ARC.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4FC8460F21463839008EDB94 /* ARC.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ARC.md; sourceTree = "<group>"; };
 		4FCFE21E2179AA53001E1879 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4FCFE276217CA82F001E1879 /* SimpleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewController.swift; sourceTree = "<group>"; };
 		4FDB69902176EB3C0017383F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		4FDB69922176EB500017383F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4FE28B5920FEDC220038D9D8 /* StandardCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandardCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +162,7 @@
 		4FC8460B2146024F008EDB94 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				4FCFE276217CA82F001E1879 /* SimpleCollectionViewController.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				4FDB69932176EB500017383F /* ProfileViewController.swift in Sources */,
 				4FCFE21F2179AA53001E1879 /* User.swift in Sources */,
 				4FDB69912176EB3C0017383F /* ListViewController.swift in Sources */,
+				4FCFE277217CA82F001E1879 /* SimpleCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

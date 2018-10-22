@@ -54,6 +54,13 @@ extension MainViewController {
       default:
         break
       }
+    case 3:
+      switch indexPath.row {
+      case 0:
+        controller = ContactsViewController()
+      default:
+        break
+      }
     default:
       break
     }
@@ -64,5 +71,9 @@ extension MainViewController {
     
     
   }
+  
+}
+
+extension MainViewController {
   
 }

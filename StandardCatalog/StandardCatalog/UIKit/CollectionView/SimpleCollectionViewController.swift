@@ -33,3 +33,29 @@ class SimpleCollectionViewController: UICollectionViewController {
   }
   
 }
+
+extension SimpleCollectionViewController : UICollectionViewDelegateFlowLayout {
+  
+  func collectionView(_ collectionView: UICollectionView,
+                      layout collectionViewLayout: UICollectionViewLayout,
+                      sizeForItemAt indexPath: IndexPath) -> CGSize {
+    
+    let paddingSpace = sectionInsets.left * (3 + 1)
+    let availableWidth = view.frame.width - paddingSpace
+    let widthPerItem = availableWidth / 3
+    
+    return CGSize(width: widthPerItem, height: widthPerItem)
+  }
+  
+  func collectionView(_ collectionView: UICollectionView,
+                      layout collectionViewLayout: UICollectionViewLayout,
+                      insetForSectionAt section: Int) -> UIEdgeInsets {
+    return sectionInsets
+  }
+  
+  func collectionView(_ collectionView: UICollectionView,
+                      layout collectionViewLayout: UICollectionViewLayout,
+                      minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    return sectionInsets.left
+  }
+}

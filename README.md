@@ -10,7 +10,21 @@ is a collection of common functionalities in iOS applications, bundle together t
 
 This will consist an Xcode project with an iPhone Application (primarily and hopefully will add iPad support), categorised into different patterns such as tableview, camera, collection and more. (Will work on how this project is organized).
 
+The goal of this project is to focus purely on the Apple API and to not depend on any third-party.
+
 <mark>Note: Im integrating [swiftlint](https://github.com/realm/SwiftLint) to force a cleaner code</mark>
+
+Directory Structure:
+```
+Standard Catalog
+|- Shared - common helper code, datasources, etc.
+|- Fundamentals - Foundation classes, playgrounds and code snippets
+|- UIKit - TableViews, CollectionViews, Animations
+|- AppServices - Contacts, EventKit, MapKit
+|- Networking - URLSession
+|- Caching - UserDefaults, NSCache, Core Data
+|- Security - Keychain Services?
+```
 
 
 # Reactive Xcode Project

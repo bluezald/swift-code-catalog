@@ -29,35 +29,30 @@ extension MainViewController {
     var controller: UIViewController?
     
     switch indexPath.section {
-    case 0: // Table Views
+    case 0: // UIKit
       switch indexPath.row {
-      case 0: // Simple Table View
+      case 0:
         controller = SimpleTableViewController()
       case 1:
         controller = SimpleSearchTableViewController()
-      default:
-        break
-      }
-    case 1:
-      switch indexPath.row {
-      case 0:
+      case 2:
         controller = self.storyboard?.instantiateViewController(withIdentifier: "SimpleCollectionViewController")
       default:
         break
       }
-    case 2:
+    case 1: // App Services
+      switch indexPath.row {
+      case 0:
+        controller = ContactsViewController()
+      default:
+        break
+      }
+    case 2: // Networking
       switch indexPath.row {
       case 0:
         controller = ListViewController()
       case 1:
         controller = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController")
-      default:
-        break
-      }
-    case 3:
-      switch indexPath.row {
-      case 0:
-        controller = ContactsViewController()
       default:
         break
       }

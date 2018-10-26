@@ -96,6 +96,7 @@
 		4F7F13B521722F29004EE508 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				4FC0C9962174A71B00F8AF92 /* Animations */,
 				4FC8460B2146024F008EDB94 /* CollectionView */,
 				4FC8460A21460245008EDB94 /* TableView */,
 				4FF419192105F9C00086CFB7 /* VisualEffect */,
@@ -239,13 +240,11 @@
 			children = (
 				4FC0C9922174A50700F8AF92 /* Shared */,
 				4F7F13B421722ED0004EE508 /* Fundamentals */,
-				4FC0C9972174A73700F8AF92 /* Caching */,
-				4FCFE278217CC1E1001E1879 /* Contacts */,
-				4FCFE27B217DE6B6001E1879 /* EventKit */,
-				4FCFE27C217DE7D6001E1879 /* MapKit */,
 				4F7F13B521722F29004EE508 /* UIKit */,
-				4FC0C9962174A71B00F8AF92 /* Animations */,
+				4FEF13E92182D18600D08E6F /* AppServices */,
 				4FC0C9952174A62700F8AF92 /* Networking */,
+				4FC0C9972174A73700F8AF92 /* Caching */,
+				4FEF13EA2182D67B00D08E6F /* Security */,
 				4FE28B5C20FEDC220038D9D8 /* AppDelegate.swift */,
 				4FE28B5E20FEDC220038D9D8 /* MainViewController.swift */,
 				4FE28B6020FEDC220038D9D8 /* Main.storyboard */,
@@ -263,6 +262,23 @@
 				4FE28B7320FEDC220038D9D8 /* Info.plist */,
 			);
 			path = StandardCatalogTests;
+			sourceTree = "<group>";
+		};
+		4FEF13E92182D18600D08E6F /* AppServices */ = {
+			isa = PBXGroup;
+			children = (
+				4FCFE278217CC1E1001E1879 /* Contacts */,
+				4FCFE27B217DE6B6001E1879 /* EventKit */,
+				4FCFE27C217DE7D6001E1879 /* MapKit */,
+			);
+			path = AppServices;
+			sourceTree = "<group>";
+		};
+		4FEF13EA2182D67B00D08E6F /* Security */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Security;
 			sourceTree = "<group>";
 		};
 		4FF419192105F9C00086CFB7 /* VisualEffect */ = {

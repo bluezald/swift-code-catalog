@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F61F58A218594C800E41E55 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61F589218594C800E41E55 /* RemindersViewController.swift */; };
 		4F67D0282161F50400027E7B /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67D0272161F50400027E7B /* SimpleTableViewController.swift */; };
 		4F9F0134217826A100C0F41C /* Reqres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9F0133217826A100C0F41C /* Reqres.swift */; };
 		4FC0C9912174A4E200F8AF92 /* SimpleSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0C9902174A4E200F8AF92 /* SimpleSearchTableViewController.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		4F6123E92158864E00AC204A /* Codable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Codable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4F6123EA21588B8400AC204A /* GCD.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GCD.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4F61F589218594C800E41E55 /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
 		4F67D0272161F50400027E7B /* SimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
 		4F90D0BA2169080C00A11F5D /* Date.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Date.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4F9F0133217826A100C0F41C /* Reqres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reqres.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 		4FCFE27B217DE6B6001E1879 /* EventKit */ = {
 			isa = PBXGroup;
 			children = (
+				4F61F589218594C800E41E55 /* RemindersViewController.swift */,
 			);
 			path = EventKit;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FC0C9942174A52500F8AF92 /* Datasource.swift in Sources */,
+				4F61F58A218594C800E41E55 /* RemindersViewController.swift in Sources */,
 				4FE28B5F20FEDC220038D9D8 /* MainViewController.swift in Sources */,
 				4FF4191B2105FAAE0086CFB7 /* VisualEffectViewController.swift in Sources */,
 				4F9F0134217826A100C0F41C /* Reqres.swift in Sources */,

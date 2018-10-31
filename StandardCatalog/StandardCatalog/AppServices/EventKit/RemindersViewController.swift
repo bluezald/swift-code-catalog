@@ -21,6 +21,10 @@ class RemindersViewController: UITableViewController {
 
   var reminders = [EKReminder]()
   
+  deinit {
+    removeObserver()
+  }
+  
   func accessReminders() {
     let status = EKEventStore.authorizationStatus(for: .reminder)
     
@@ -81,7 +85,7 @@ class RemindersViewController: UITableViewController {
     }
   }
   
-  func fetchReminders() {
+  @objc func fetchReminders() {
     if isAccessGranted && calendar != nil {
       let predicate = eventStore.predicateForReminders(in: [calendar!])
       eventStore.fetchReminders(matching: predicate) { (reminders) in
@@ -89,6 +93,28 @@ class RemindersViewController: UITableViewController {
         DispatchQueue.main.async {
           self.tableView.reloadData()
         }
+      }
+    }
+  }
+  
+  func deleteReminder(item: String) {
+
+    let predicate = NSPredicate(format: "title matches %@", item)
+    let results = self.reminders.filter { predicate.evaluate(with: $0) }
+    
+    if results.count > 0 {
+      for reminder in results {
+        do {
+          try eventStore.remove(reminder, commit: false)
+        } catch {
+          // Handle error in removing an item
+        }
+      }
+      
+      do {
+        try eventStore.commit()
+      } catch {
+        // Handle error in commit
       }
     }
   }
@@ -103,6 +129,7 @@ extension RemindersViewController {
     self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
     accessReminders()
     setupCalendar()
+    addObserver()
     fetchReminders()
   }
   
@@ -119,4 +146,32 @@ extension RemindersViewController {
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     print(reminders[indexPath.row].title)
   }
+  
+  override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    if let item = reminders[indexPath.row].title {
+      reminders.remove(at: indexPath.row)
+      deleteReminder(item: item)
+      tableView.deleteRows(at: [indexPath], with: .automatic)
+    }
+    
+  }
+}
+
+// MARK: Observer
+extension RemindersViewController {
+  
+  fileprivate func addObserver() {
+    NotificationCenter.default
+      .addObserver(self,
+                   selector: #selector(RemindersViewController.fetchReminders),
+                   name: Notification.Name.EKEventStoreChanged,
+                   object: nil)
+  }
+  
+  fileprivate func removeObserver() {
+    NotificationCenter.default.removeObserver(self)
+  }
+  
+  
+  
 }

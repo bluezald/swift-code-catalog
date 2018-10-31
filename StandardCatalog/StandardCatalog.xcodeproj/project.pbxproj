@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F61F58A218594C800E41E55 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61F589218594C800E41E55 /* RemindersViewController.swift */; };
+		4F61F590218891CE00E41E55 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61F58F218891CE00E41E55 /* MapsViewController.swift */; };
 		4F67D0282161F50400027E7B /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67D0272161F50400027E7B /* SimpleTableViewController.swift */; };
 		4F9F0134217826A100C0F41C /* Reqres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9F0133217826A100C0F41C /* Reqres.swift */; };
 		4FC0C9912174A4E200F8AF92 /* SimpleSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0C9902174A4E200F8AF92 /* SimpleSearchTableViewController.swift */; };
@@ -41,6 +42,7 @@
 		4F6123E92158864E00AC204A /* Codable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Codable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4F6123EA21588B8400AC204A /* GCD.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GCD.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4F61F589218594C800E41E55 /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
+		4F61F58F218891CE00E41E55 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		4F67D0272161F50400027E7B /* SimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
 		4F90D0BA2169080C00A11F5D /* Date.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Date.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4F9F0133217826A100C0F41C /* Reqres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reqres.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 		4FCFE27C217DE7D6001E1879 /* MapKit */ = {
 			isa = PBXGroup;
 			children = (
+				4F61F58F218891CE00E41E55 /* MapsViewController.swift */,
 			);
 			path = MapKit;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				4FCFE27A217CC2B8001E1879 /* ContactsViewController.swift in Sources */,
 				4FE28B5D20FEDC220038D9D8 /* AppDelegate.swift in Sources */,
 				4F67D0282161F50400027E7B /* SimpleTableViewController.swift in Sources */,
+				4F61F590218891CE00E41E55 /* MapsViewController.swift in Sources */,
 				4FDB69932176EB500017383F /* ProfileViewController.swift in Sources */,
 				4FCFE21F2179AA53001E1879 /* User.swift in Sources */,
 				4FDB69912176EB3C0017383F /* ListViewController.swift in Sources */,

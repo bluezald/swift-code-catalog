@@ -44,6 +44,8 @@ extension MainViewController {
       switch indexPath.row {
       case 0:
         controller = ContactsViewController()
+      case 1:
+        controller = RemindersViewController()
       default:
         break
       }

@@ -15,11 +15,11 @@ import EventKit
 ///
 class RemindersViewController: UITableViewController {
   
-  let eventStore = EKEventStore()
+  private let eventStore = EKEventStore()
   private var calendar: EKCalendar?
   private var isAccessGranted = false
 
-  var items = [String]()
+  var reminders = [EKReminder]()
   
   func accessReminders() {
     let status = EKEventStore.authorizationStatus(for: .reminder)
@@ -81,6 +81,18 @@ class RemindersViewController: UITableViewController {
     }
   }
   
+  func fetchReminders() {
+    if isAccessGranted && calendar != nil {
+      let predicate = eventStore.predicateForReminders(in: [calendar!])
+      eventStore.fetchReminders(matching: predicate) { (reminders) in
+        self.reminders = reminders ?? [EKReminder]()
+        DispatchQueue.main.async {
+          self.tableView.reloadData()
+        }
+      }
+    }
+  }
+  
 }
 
 // MARK: Tableview
@@ -91,20 +103,20 @@ extension RemindersViewController {
     self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
     accessReminders()
     setupCalendar()
-    addReminder(item: "Do Dishes")
+    fetchReminders()
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return items.count
+    return reminders.count
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
-    
+    cell.textLabel?.text = reminders[indexPath.row].title
     return cell
   }
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    print(items[indexPath.row])
+    print(reminders[indexPath.row].title)
   }
 }

@@ -119,6 +119,16 @@ class RemindersViewController: UITableViewController {
     }
   }
   
+  func toggleCompletedForReminder(reminder: EKReminder) {
+    reminder.isCompleted = !reminder.isCompleted
+    
+    do {
+      try eventStore.save(reminder, commit: true)
+    } catch {
+      // Handle error in updating reminder
+    }
+  }
+  
 }
 
 // MARK: Tableview
@@ -139,12 +149,20 @@ extension RemindersViewController {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
-    cell.textLabel?.text = reminders[indexPath.row].title
+    
+    let reminder = reminders[indexPath.row]
+    updateCell(cell, withReminder: reminder)
     return cell
   }
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     print(reminders[indexPath.row].title)
+    
+    let reminder = reminders[indexPath.row]
+    let cell = tableView.cellForRow(at: indexPath)
+    toggleCompletedForReminder(reminder: reminder)
+    updateCell(cell!, withReminder: reminder)
+    
   }
   
   override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -154,6 +172,11 @@ extension RemindersViewController {
       tableView.deleteRows(at: [indexPath], with: .automatic)
     }
     
+  }
+  
+  fileprivate func updateCell(_ cell: UITableViewCell, withReminder reminder: EKReminder) {
+    cell.textLabel?.text = reminder.title
+    cell.accessoryType = reminder.isCompleted ? .checkmark : .none
   }
 }
 
@@ -171,7 +194,5 @@ extension RemindersViewController {
   fileprivate func removeObserver() {
     NotificationCenter.default.removeObserver(self)
   }
-  
-  
   
 }

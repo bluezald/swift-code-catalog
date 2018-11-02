@@ -46,6 +46,8 @@ extension MainViewController {
         controller = ContactsViewController()
       case 1:
         controller = RemindersViewController()
+      case 2:
+        controller = self.storyboard?.instantiateViewController(withIdentifier: "MapsViewController")
       default:
         break
       }

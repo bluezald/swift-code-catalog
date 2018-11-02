@@ -6,4 +6,14 @@
 //  Copyright © 2018 CommandBin. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import MapKit
+
+class MapsViewController: UIViewController {
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view, typically from a nib.
+  }
+  
+}

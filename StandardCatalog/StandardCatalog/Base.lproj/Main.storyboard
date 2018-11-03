@@ -232,6 +232,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ato-OM-SDC"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="eKy-dX-WTZ" id="RfJ-IO-fOE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwA-hg-bxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

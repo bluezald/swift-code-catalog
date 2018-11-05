@@ -10,7 +10,7 @@ import UIKit
 
 class SimpleSearchTableViewController: UITableViewController {
   
-  var items = Datasource.items
+  var items = Datastore.items
   var filteredItems = [String]()
   let searchController = UISearchController(searchResultsController: nil)
   

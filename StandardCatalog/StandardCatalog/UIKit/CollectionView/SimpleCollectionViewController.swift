@@ -13,7 +13,7 @@ class SimpleCollectionViewController: UICollectionViewController {
   fileprivate let reuseIdentifier = "UICollectionViewCell"
   fileprivate let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
 
-  var items = Datasource.items
+  var items = Datastore.items
   
   override func numberOfSections(in collectionView: UICollectionView) -> Int {
     return 1

@@ -10,7 +10,7 @@ import UIKit
 
 class SimpleTableViewController: UITableViewController {
   
-  var items = Datasource.items
+  var items = Datastore.items
   
   override func viewDidLoad() {
     super.viewDidLoad()

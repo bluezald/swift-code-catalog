@@ -36,7 +36,7 @@ extension MainViewController {
       case 1:
         controller = SimpleSearchTableViewController()
       case 2:
-        controller = ChatTableViewController()
+        controller = self.storyboard?.instantiateViewController(withIdentifier: "ChatTableViewController")
       case 3:
         controller = self.storyboard?.instantiateViewController(withIdentifier: "SimpleCollectionViewController")
       default:

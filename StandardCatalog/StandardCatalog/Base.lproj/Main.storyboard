@@ -291,6 +291,66 @@
             </objects>
             <point key="canvasLocation" x="2863" y="-610"/>
         </scene>
+        <!--Chat Table View Controller-->
+        <scene sceneID="I55-31-Nly">
+            <objects>
+                <tableViewController storyboardIdentifier="ChatTableViewController" id="Bp7-e6-9xV" customClass="ChatTableViewController" customModule="StandardCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1XS-iO-19S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatTableViewCell" rowHeight="60" id="ui2-WJ-D1k" customClass="ChatTableViewCell" customModule="StandardCatalog" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ui2-WJ-D1k" id="QJS-PF-Wms">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8b-6C-1Zb" customClass="SpeechBubbleView" customModule="StandardCatalog" customModuleProvider="target">
+                                            <rect key="frame" x="4" y="4" width="367" height="51.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34A-2b-VRq">
+                                                    <rect key="frame" x="4" y="4" width="359" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="34A-2b-VRq" secondAttribute="trailing" constant="4" id="YGn-cJ-Wwb"/>
+                                                <constraint firstItem="34A-2b-VRq" firstAttribute="top" secondItem="b8b-6C-1Zb" secondAttribute="top" constant="4" id="cjo-Ub-WKx"/>
+                                                <constraint firstAttribute="bottom" secondItem="34A-2b-VRq" secondAttribute="bottom" constant="4" id="f38-G2-deI"/>
+                                                <constraint firstItem="34A-2b-VRq" firstAttribute="leading" secondItem="b8b-6C-1Zb" secondAttribute="leading" constant="4" id="wja-Ke-omY"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="b8b-6C-1Zb" firstAttribute="leading" secondItem="QJS-PF-Wms" secondAttribute="leading" constant="4" id="Gzh-sS-kvB"/>
+                                        <constraint firstItem="b8b-6C-1Zb" firstAttribute="top" secondItem="QJS-PF-Wms" secondAttribute="top" constant="4" id="ZWj-uC-Bq8"/>
+                                        <constraint firstAttribute="bottom" secondItem="b8b-6C-1Zb" secondAttribute="bottom" constant="4" id="ahu-W5-aBQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="b8b-6C-1Zb" secondAttribute="trailing" constant="4" id="jtU-je-h0v"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bubbleView" destination="b8b-6C-1Zb" id="Zrk-EF-ZL7"/>
+                                    <outlet property="leadingConstraint" destination="Gzh-sS-kvB" id="FVN-yv-yFk"/>
+                                    <outlet property="messageLabel" destination="34A-2b-VRq" id="K0h-QK-nkb"/>
+                                    <outlet property="trailingConstraint" destination="jtU-je-h0v" id="2Uz-fO-xJQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Bp7-e6-9xV" id="0BW-xt-rrQ"/>
+                            <outlet property="delegate" destination="Bp7-e6-9xV" id="eje-qR-R7b"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dV-MJ-rgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3616.8000000000002" y="-609.44527736131943"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="UW7-w0-yK4">
             <objects>

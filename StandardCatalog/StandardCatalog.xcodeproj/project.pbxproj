@@ -118,6 +118,20 @@
 			path = Date;
 			sourceTree = "<group>";
 		};
+		4FA1A69E2197EB1C003A0EFF /* Speech */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Speech;
+			sourceTree = "<group>";
+		};
+		4FA1A69F2197EB29003A0EFF /* SiriKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SiriKit;
+			sourceTree = "<group>";
+		};
 		4FC0C9922174A50700F8AF92 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +290,8 @@
 		4FEF13E92182D18600D08E6F /* AppServices */ = {
 			isa = PBXGroup;
 			children = (
+				4FA1A69F2197EB29003A0EFF /* SiriKit */,
+				4FA1A69E2197EB1C003A0EFF /* Speech */,
 				4FCFE278217CC1E1001E1879 /* Contacts */,
 				4FCFE27B217DE6B6001E1879 /* EventKit */,
 				4FCFE27C217DE7D6001E1879 /* MapKit */,

@@ -25,6 +25,15 @@ Standard Catalog
 |- Caching - UserDefaults, NSCache, Core Data
 |- Security - Keychain Services?
 ```
+## App Services
+
+A self-mastery training for me is to be familiar with Apple's App Services.
+
+- SiriKit
+- Speech
+- Contacts
+- EventKit
+- MapKit
 
 
 # Reactive Xcode Project

@@ -15,10 +15,27 @@ import UIKit
 /// Make sure to check out here: https://bit.ly/2zwLqbf
 class ChatTableViewCell: UITableViewCell {
   
+  static let padding: CGFloat = 60.0
   @IBOutlet weak var bubbleView: SpeechBubbleView!
   @IBOutlet weak var messageLabel: UILabel!
   @IBOutlet weak var trailingConstraint: NSLayoutConstraint!
   @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
+  
+  public func configureCell(text: String, messageType: MessageType) {
+    
+    messageLabel.text = text
+    bubbleView.messageType = messageType
+    
+    if (bubbleView.messageType == .outgoing) {
+      leadingConstraint.constant = ChatTableViewCell.padding
+      messageLabel.textColor = .white
+    } else {
+      trailingConstraint.constant = ChatTableViewCell.padding
+    }
+    updateConstraints()
+    setNeedsLayout()
+    
+  }
   
 }
 
@@ -130,10 +147,9 @@ class ChatTableViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "ChatTableViewCell") as! ChatTableViewCell
     
-    // TODO: Use a custom cell instead
     let text = items[indexPath.row]
-    cell.messageLabel.text = text
-    cell.bubbleView.messageType = indexPath.row % 2 == 0 ? .incoming : .outgoing
+    let messageType: MessageType = (indexPath.row % 2 == 0) ? .incoming : .outgoing
+    cell.configureCell(text: text, messageType: messageType)
     
     return cell
   }

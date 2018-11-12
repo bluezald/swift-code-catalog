@@ -26,6 +26,8 @@
 		4FE28B6420FEDC220038D9D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE28B6320FEDC220038D9D8 /* Assets.xcassets */; };
 		4FE28B6720FEDC220038D9D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE28B6520FEDC220038D9D8 /* LaunchScreen.storyboard */; };
 		4FE28B7220FEDC220038D9D8 /* StandardCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE28B7120FEDC220038D9D8 /* StandardCatalogTests.swift */; };
+		4FEB4D232199A6870030008D /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB4D222199A6870030008D /* SpeechManager.swift */; };
+		4FEB4D252199A6A10030008D /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB4D242199A6A10030008D /* SpeechViewController.swift */; };
 		4FF4191B2105FAAE0086CFB7 /* VisualEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4191A2105FAAE0086CFB7 /* VisualEffectViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		4FE28B6D20FEDC220038D9D8 /* StandardCatalogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandardCatalogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE28B7120FEDC220038D9D8 /* StandardCatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardCatalogTests.swift; sourceTree = "<group>"; };
 		4FE28B7320FEDC220038D9D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FEB4D222199A6870030008D /* SpeechManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
+		4FEB4D242199A6A10030008D /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
 		4FF4191A2105FAAE0086CFB7 /* VisualEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +125,8 @@
 		4FA1A69E2197EB1C003A0EFF /* Speech */ = {
 			isa = PBXGroup;
 			children = (
+				4FEB4D222199A6870030008D /* SpeechManager.swift */,
+				4FEB4D242199A6A10030008D /* SpeechViewController.swift */,
 			);
 			path = Speech;
 			sourceTree = "<group>";
@@ -437,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FC0C9942174A52500F8AF92 /* Datastore.swift in Sources */,
+				4FEB4D232199A6870030008D /* SpeechManager.swift in Sources */,
 				4F61F58A218594C800E41E55 /* RemindersViewController.swift in Sources */,
 				4FE28B5F20FEDC220038D9D8 /* MainViewController.swift in Sources */,
 				4FF4191B2105FAAE0086CFB7 /* VisualEffectViewController.swift in Sources */,
@@ -450,6 +457,7 @@
 				4FCFE21F2179AA53001E1879 /* User.swift in Sources */,
 				4FDB69912176EB3C0017383F /* ListViewController.swift in Sources */,
 				4FCFE277217CA82F001E1879 /* SimpleCollectionViewController.swift in Sources */,
+				4FEB4D252199A6A10030008D /* SpeechViewController.swift in Sources */,
 				4F1E6E1C218E9ABF00015EA3 /* ChatTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

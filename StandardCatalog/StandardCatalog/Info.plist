@@ -24,6 +24,8 @@
 	<string>The app will access the contacts to demonstrate the usage, purely for viewing purposes</string>
 	<key>NSRemindersUsageDescription</key>
 	<string>The app will access the reminders calendar to demonstrate the usage of viewing, adding, updating and removing of reminder item.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>This app will access speech, to convert your voice to text. This is for demo purposes only.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

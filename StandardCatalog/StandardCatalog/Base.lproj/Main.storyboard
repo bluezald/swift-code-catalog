@@ -257,6 +257,62 @@
             </objects>
             <point key="canvasLocation" x="3604" y="132"/>
         </scene>
+        <!--Speech View Controller-->
+        <scene sceneID="XYP-ei-Ccs">
+            <objects>
+                <viewController id="R4a-0U-jVa" customClass="SpeechViewController" customModule="StandardCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mmq-XH-HJC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjT-tz-LRE">
+                                <rect key="frame" x="16" y="57" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fD-nD-z4a">
+                                <rect key="frame" x="16" y="93.5" width="343" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="record:" destination="R4a-0U-jVa" eventType="touchUpInside" id="iNQ-Rl-Ta2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwJ-fR-iXL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="21"/>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8fD-nD-z4a" firstAttribute="leading" secondItem="bfL-eb-U1Z" secondAttribute="leading" constant="16" id="1TU-x8-DoK"/>
+                            <constraint firstItem="8fD-nD-z4a" firstAttribute="top" secondItem="zjT-tz-LRE" secondAttribute="bottom" constant="16" id="3pQ-np-u4D"/>
+                            <constraint firstItem="bfL-eb-U1Z" firstAttribute="trailing" secondItem="8fD-nD-z4a" secondAttribute="trailing" constant="16" id="M4b-Hp-Lsa"/>
+                            <constraint firstItem="bfL-eb-U1Z" firstAttribute="trailing" secondItem="zjT-tz-LRE" secondAttribute="trailing" constant="16" id="Wed-kE-Ua7"/>
+                            <constraint firstItem="bfL-eb-U1Z" firstAttribute="trailing" secondItem="GwJ-fR-iXL" secondAttribute="trailing" id="dVI-oU-c5e"/>
+                            <constraint firstItem="zjT-tz-LRE" firstAttribute="top" secondItem="GwJ-fR-iXL" secondAttribute="bottom" constant="16" id="duk-xO-P30"/>
+                            <constraint firstItem="zjT-tz-LRE" firstAttribute="leading" secondItem="bfL-eb-U1Z" secondAttribute="leading" constant="16" id="f1I-EW-oVQ"/>
+                            <constraint firstItem="GwJ-fR-iXL" firstAttribute="top" secondItem="bfL-eb-U1Z" secondAttribute="top" id="lJI-cB-w91"/>
+                            <constraint firstItem="GwJ-fR-iXL" firstAttribute="leading" secondItem="bfL-eb-U1Z" secondAttribute="leading" id="mqq-uq-MaV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bfL-eb-U1Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="recordingStatusLabel" destination="GwJ-fR-iXL" id="dQW-ta-coe"/>
+                        <outlet property="resultStringLabel" destination="zjT-tz-LRE" id="IFo-DQ-52h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x6D-B0-pEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4274" y="133"/>
+        </scene>
         <!--Simple Collection View Controller-->
         <scene sceneID="tWH-YD-mTu">
             <objects>

@@ -8,6 +8,10 @@
 
 import UIKit
 
+///
+/// When trying to use Speech framework, make sure to add description in
+/// Info.plist for - NSSpeechRecognitionUsageDescription
+///
 class SpeechViewController: UIViewController {
   
   let speechManager: SpeechManager = SpeechManager.sharedInstance

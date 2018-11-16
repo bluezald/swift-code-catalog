@@ -50,6 +50,8 @@ extension MainViewController {
         controller = RemindersViewController()
       case 2:
         controller = self.storyboard?.instantiateViewController(withIdentifier: "MapsViewController")
+      case 3:
+        controller = self.storyboard?.instantiateViewController(withIdentifier: "SpeechViewController")
       default:
         break
       }

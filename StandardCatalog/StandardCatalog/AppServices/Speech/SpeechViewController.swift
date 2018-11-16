@@ -10,7 +10,7 @@ import UIKit
 
 ///
 /// When trying to use Speech framework, make sure to add description in
-/// Info.plist for - NSSpeechRecognitionUsageDescription
+/// Info.plist for - NSSpeechRecognitionUsageDescription, NSMicrophoneUsageDescription
 ///
 class SpeechViewController: UIViewController {
   

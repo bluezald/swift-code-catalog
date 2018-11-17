@@ -21,6 +21,32 @@ class MapsViewController: UIViewController {
                                      longitude: 123.8854)
     centerMapOnLocation(location: initialLocation)
     
+    addAnnotations()
+    
+  }
+  
+  func addAnnotations() {
+    
+    let annotation1 = MKPointAnnotation()
+    annotation1.title = "SM Seaside"
+    annotation1.coordinate = CLLocationCoordinate2D(latitude: 10.2818, longitude: 123.8812)
+    
+    let annotation2 = MKPointAnnotation()
+    annotation2.title = "Ayala"
+    annotation2.coordinate = CLLocationCoordinate2D(latitude: 10.3181, longitude: 123.9051)
+    
+    let annotation3 = MKPointAnnotation()
+    annotation3.title = "SM City"
+    annotation3.coordinate = CLLocationCoordinate2D(latitude: 10.3118, longitude: 123.9181)
+    
+    let annotation4 = MKPointAnnotation()
+    annotation4.title = "Parkmall"
+    annotation4.coordinate = CLLocationCoordinate2D(latitude: 10.3252, longitude: 123.9336)
+    
+    mapView.addAnnotation(annotation1)
+    mapView.addAnnotation(annotation2)
+    mapView.addAnnotation(annotation3)
+    mapView.addAnnotation(annotation4)
     
   }
   

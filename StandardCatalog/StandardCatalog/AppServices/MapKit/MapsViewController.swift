@@ -9,15 +9,23 @@
 import UIKit
 import MapKit
 
+///
+/// When trying to access current location, make sure to add description in
+/// Info.plist for - NSLocationAlwaysAndWhenInUseUsageDescription,
+/// NSLocationWhenInUseUsageDescription
+///
 class MapsViewController: UIViewController {
   
   @IBOutlet weak var mapView: MKMapView!
   let regionRadius: CLLocationDistance = 10000
+  var locationManager: CLLocationManager?
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     mapView.delegate = self
+    
+    setLocationManager()
     
     let initialLocation = CLLocation(latitude: 10.3181,
                                      longitude: 123.90)
@@ -25,6 +33,30 @@ class MapsViewController: UIViewController {
     
     addAnnotations()
     
+  }
+  
+  func setLocationManager() {
+    let locationManager = CLLocationManager()
+    locationManager.delegate = self
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    
+    // Check for Location Services
+    if (CLLocationManager.locationServicesEnabled()) {
+      locationManager.requestAlwaysAuthorization()
+      locationManager.requestWhenInUseAuthorization()
+    }
+    
+    //Zoom to user location
+    if let userLocation = locationManager.location?.coordinate {
+      let viewRegion = MKCoordinateRegionMakeWithDistance(userLocation, 200, 200)
+      mapView.setRegion(viewRegion, animated: false)
+    }
+    
+    self.locationManager = locationManager
+    
+    DispatchQueue.main.async {
+      self.locationManager?.startUpdatingLocation()
+    }
   }
   
   func addAnnotations() {
@@ -62,5 +94,9 @@ extension MapsViewController: MKMapViewDelegate {
   func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
     
   }
+  
+}
+
+extension MapsViewController: CLLocationManagerDelegate {
   
 }

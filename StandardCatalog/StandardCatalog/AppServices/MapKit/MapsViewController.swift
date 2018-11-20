@@ -59,33 +59,7 @@ class MapsViewController: UIViewController {
     }
   }
   
-  func addAnnotations() {
-    
-    if let locations = Location.getSampleLocations() {
-      
-      for location in locations {
-        
-        let annotation = MKPointAnnotation()
-        annotation.title = location.title
-        annotation.coordinate = CLLocationCoordinate2D(latitude: location.latitude,
-                                                       longitude: location.longitude)
-        mapView.addAnnotation(annotation)
-      }
-     
-      
-      let coordinate1 = CLLocationCoordinate2D(latitude: locations[0].latitude,
-                                               longitude: locations[0].longitude)
-      
-      let coordinate2 = CLLocationCoordinate2D(latitude: locations[1].latitude,
-                                               longitude: locations[1].longitude)
-      
-      displaySampleDirection(from: coordinate1, coordinate2: coordinate2)
-      
-    }
-    
-  }
-  
-  func displaySampleDirection(from coordinate1: CLLocationCoordinate2D, coordinate2: CLLocationCoordinate2D) {
+  func displayDirection(from coordinate1: CLLocationCoordinate2D, coordinate2: CLLocationCoordinate2D) {
     
     let request = MKDirections.Request()
     request.source = MKMapItem(placemark: MKPlacemark(coordinate: coordinate1, addressDictionary: nil))
@@ -110,6 +84,37 @@ class MapsViewController: UIViewController {
                                                               regionRadius,
                                                               regionRadius)
     mapView.setRegion(coordinateRegion, animated: true)
+  }
+  
+}
+
+extension MapsViewController {
+  
+  func addAnnotations() {
+    
+    if let locations = Location.getSampleLocations() {
+      
+      for location in locations {
+        
+        let annotation = MKPointAnnotation()
+        annotation.title = location.title
+        annotation.coordinate = CLLocationCoordinate2D(latitude: location.latitude,
+                                                       longitude: location.longitude)
+        mapView.addAnnotation(annotation)
+      }
+      
+    }
+    
+  }
+  
+  func displaySampleDirections() {
+    let coordinate1 = CLLocationCoordinate2D(latitude: locations[0].latitude,
+                                             longitude: locations[0].longitude)
+    
+    let coordinate2 = CLLocationCoordinate2D(latitude: locations[1].latitude,
+                                             longitude: locations[1].longitude)
+    
+    displayDirection(from: coordinate1, coordinate2: coordinate2)
   }
   
 }

@@ -224,6 +224,5 @@ public class SpeechManager: NSObject, AVAudioRecorderDelegate, AVAudioPlayerDele
     }
   }
   
-  
 }
 

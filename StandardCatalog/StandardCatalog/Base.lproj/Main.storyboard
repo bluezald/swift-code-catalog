@@ -290,9 +290,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fD-nD-z4a">
                                 <rect key="frame" x="16" y="93.5" width="343" height="36"/>
-                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Record"/>
                                 <connections>
                                     <action selector="record:" destination="R4a-0U-jVa" eventType="touchUpInside" id="iNQ-Rl-Ta2"/>
@@ -322,6 +320,7 @@
                         <viewLayoutGuide key="safeArea" id="bfL-eb-U1Z"/>
                     </view>
                     <connections>
+                        <outlet property="recordButton" destination="8fD-nD-z4a" id="Aha-Ql-oO7"/>
                         <outlet property="recordingStatusLabel" destination="GwJ-fR-iXL" id="dQW-ta-coe"/>
                         <outlet property="resultStringLabel" destination="zjT-tz-LRE" id="IFo-DQ-52h"/>
                     </connections>

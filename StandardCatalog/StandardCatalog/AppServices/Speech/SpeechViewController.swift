@@ -18,9 +18,11 @@ class SpeechViewController: UIViewController {
   
   @IBOutlet weak var recordingStatusLabel: UILabel!
   @IBOutlet weak var resultStringLabel: UILabel!
+  @IBOutlet weak var recordButton: UIButton!
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    setupViews()
     // Do any additional setup after loading the view, typically from a nib.
   }
   
@@ -80,15 +82,22 @@ class SpeechViewController: UIViewController {
 
 extension SpeechViewController {
   
+  fileprivate func setupViews() {
+    self.recordButton.setTitle("Record", for: .normal)
+    self.recordButton.setTitle("Recording", for: .selected)
+  }
+  
   fileprivate func setViewRecording() {
     DispatchQueue.main.async {
       self.recordingStatusLabel.text = "Recording Status is on"
+      self.recordButton.isSelected = true
     }
   }
   
   fileprivate func resetView() {
     DispatchQueue.main.async {
       self.recordingStatusLabel.text = "Recording Status is off"
+      self.recordButton.isSelected = false
     }
     
     

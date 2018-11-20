@@ -107,7 +107,7 @@ extension MapsViewController {
     
   }
   
-  func displaySampleDirections() {
+  func displaySampleDirections(locations: [Location]) {
     let coordinate1 = CLLocationCoordinate2D(latitude: locations[0].latitude,
                                              longitude: locations[0].longitude)
     

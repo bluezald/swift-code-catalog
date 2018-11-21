@@ -61,22 +61,22 @@ class MapsViewController: UIViewController {
   
   func displayDirection(from coordinate1: CLLocationCoordinate2D, coordinate2: CLLocationCoordinate2D) {
     
-    let request = MKDirections.Request()
-    request.source = MKMapItem(placemark: MKPlacemark(coordinate: coordinate1, addressDictionary: nil))
-    request.destination = MKMapItem(placemark: MKPlacemark(coordinate: coordinate2, addressDictionary: nil))
-    request.requestsAlternateRoutes = true
-    request.transportType = .automobile
-    
-    let directions = MKDirections(request: request)
-    
-    directions.calculate { [unowned self] response, error in
-      guard let unwrappedResponse = response else { return }
-      
-      for route in unwrappedResponse.routes {
-        self.mapView.add(route.polyline)
-        self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
-      }
-    }
+//    let request = MKDirections.Request()
+//    request.source = MKMapItem(placemark: MKPlacemark(coordinate: coordinate1, addressDictionary: nil))
+//    request.destination = MKMapItem(placemark: MKPlacemark(coordinate: coordinate2, addressDictionary: nil))
+//    request.requestsAlternateRoutes = true
+//    request.transportType = .automobile
+//    
+//    let directions = MKDirections(request: request)
+//    
+//    directions.calculate { [unowned self] response, error in
+//      guard let unwrappedResponse = response else { return }
+//      
+//      for route in unwrappedResponse.routes {
+//        self.mapView.add(route.polyline)
+//        self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
+//      }
+//    }
   }
   
   func centerMapOnLocation(location: CLLocation) {

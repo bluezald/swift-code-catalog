@@ -47,10 +47,12 @@ extension MainViewController {
       case 0:
         controller = ContactsViewController()
       case 1:
-        controller = RemindersViewController()
+        controller = self.storyboard?.instantiateViewController(withIdentifier: "ContactsUIViewController")
       case 2:
-        controller = self.storyboard?.instantiateViewController(withIdentifier: "MapsViewController")
+        controller = RemindersViewController()
       case 3:
+        controller = self.storyboard?.instantiateViewController(withIdentifier: "MapsViewController")
+      case 4:
         controller = self.storyboard?.instantiateViewController(withIdentifier: "SpeechViewController")
       default:
         break

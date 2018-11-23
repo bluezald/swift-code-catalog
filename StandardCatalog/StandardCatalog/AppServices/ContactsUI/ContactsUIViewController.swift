@@ -9,6 +9,13 @@
 import UIKit
 import ContactsUI
 
+///
+/// Make sure to add usage of the following classes:
+///
+/// CNContactPicker
+/// CNContactPickerViewController
+/// CNContactViewController
+///
 class ContactsUIViewController: UIViewController {
   
   @IBOutlet weak var contactsUILaunchButton: UIButton!
@@ -22,15 +29,31 @@ class ContactsUIViewController: UIViewController {
     
   }
   
+  override func viewDidLoad() {
+    super.viewDidLoad()
+   
+  }
+  
 }
 
 extension ContactsUIViewController: CNContactPickerDelegate {
   
   func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
     
+    let contactViewController = CNContactViewController(for: contact)
+    self.navigationController?.pushViewController(contactViewController, animated: true)
+    
   }
   
   func contactPickerDidCancel(_ picker: CNContactPickerViewController) {
+    
+  }
+  
+}
+
+extension ContactsUIViewController: CNContactViewControllerDelegate {
+  
+  func contactViewController(_ viewController: CNContactViewController, didCompleteWith contact: CNContact?) {
     
   }
   

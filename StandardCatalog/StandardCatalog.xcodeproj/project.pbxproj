@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F1E6E1C218E9ABF00015EA3 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1E6E1B218E9ABF00015EA3 /* ChatTableViewController.swift */; };
+		4F24A3B221A9786500B27261 /* KeychainServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F24A3B121A9786500B27261 /* KeychainServicesViewController.swift */; };
 		4F24C3D221A64AFE001231AE /* ContactsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F24C3D121A64AFE001231AE /* ContactsUIViewController.swift */; };
 		4F61F58A218594C800E41E55 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61F589218594C800E41E55 /* RemindersViewController.swift */; };
 		4F61F590218891CE00E41E55 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61F58F218891CE00E41E55 /* MapsViewController.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		4F1E6E1B218E9ABF00015EA3 /* ChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
+		4F24A3B121A9786500B27261 /* KeychainServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainServicesViewController.swift; sourceTree = "<group>"; };
 		4F24C3D121A64AFE001231AE /* ContactsUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsUIViewController.swift; sourceTree = "<group>"; };
 		4F6123E92158864E00AC204A /* Codable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Codable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4F6123EA21588B8400AC204A /* GCD.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GCD.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -333,6 +335,7 @@
 		4FEF13EA2182D67B00D08E6F /* Security */ = {
 			isa = PBXGroup;
 			children = (
+				4F24A3B121A9786500B27261 /* KeychainServicesViewController.swift */,
 			);
 			path = Security;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				4F61F590218891CE00E41E55 /* MapsViewController.swift in Sources */,
 				4FDB69932176EB500017383F /* ProfileViewController.swift in Sources */,
 				4FCFE21F2179AA53001E1879 /* User.swift in Sources */,
+				4F24A3B221A9786500B27261 /* KeychainServicesViewController.swift in Sources */,
 				4FDB69912176EB3C0017383F /* ListViewController.swift in Sources */,
 				4FCFE277217CA82F001E1879 /* SimpleCollectionViewController.swift in Sources */,
 				4FEB4D252199A6A10030008D /* SpeechViewController.swift in Sources */,

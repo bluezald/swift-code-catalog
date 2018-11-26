@@ -6,7 +6,7 @@
 //  Copyright © 2018 CommandBin. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 ///
 /// This is a sample usage to the problem here:
@@ -14,3 +14,12 @@ import Foundation
 /// TODO: Present a view controller with a mocked login ui
 /// to demonstrate saving to keychain.
 ///
+class KeychainServicesViewController: UIViewController {
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+  }
+  
+  
+}

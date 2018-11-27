@@ -66,6 +66,13 @@ extension MainViewController {
       default:
         break
       }
+    case 4: // Security
+      switch indexPath.row {
+      case 0:
+        controller = self.storyboard?.instantiateViewController(withIdentifier: "KeychainServicesViewController")
+      default:
+        break
+      }
     default:
       break
     }

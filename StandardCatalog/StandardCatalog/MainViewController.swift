@@ -51,8 +51,10 @@ extension MainViewController {
       case 2:
         controller = RemindersViewController()
       case 3:
-        controller = self.storyboard?.instantiateViewController(withIdentifier: "MapsViewController")
+        print("Demo for EventKitUI")
       case 4:
+        controller = self.storyboard?.instantiateViewController(withIdentifier: "MapsViewController")
+      case 5:
         controller = self.storyboard?.instantiateViewController(withIdentifier: "SpeechViewController")
       default:
         break

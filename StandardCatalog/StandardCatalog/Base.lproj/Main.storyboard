@@ -502,6 +502,38 @@
             </objects>
             <point key="canvasLocation" x="4969" y="130"/>
         </scene>
+        <!--Event KitUI View Controller-->
+        <scene sceneID="rRK-gu-QW8">
+            <objects>
+                <viewController storyboardIdentifier="EventKitUIViewController" id="1cx-P4-Vrr" customClass="EventKitUIViewController" customModule="StandardCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ooq-mR-vrR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsr-bE-Z11">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <state key="normal" title="Launch Event View"/>
+                                <connections>
+                                    <action selector="launchEventView:" destination="1cx-P4-Vrr" eventType="touchUpInside" id="gha-Nr-Pnn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jsr-bE-Z11" firstAttribute="top" secondItem="n9A-2v-g0Y" secondAttribute="top" constant="16" id="LML-nP-7KV"/>
+                            <constraint firstItem="n9A-2v-g0Y" firstAttribute="trailing" secondItem="Jsr-bE-Z11" secondAttribute="trailing" constant="16" id="dF5-o2-bgj"/>
+                            <constraint firstItem="Jsr-bE-Z11" firstAttribute="leading" secondItem="n9A-2v-g0Y" secondAttribute="leading" constant="16" id="pxa-S3-jyD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n9A-2v-g0Y"/>
+                    </view>
+                    <connections>
+                        <outlet property="eventUILaunchButton" destination="Jsr-bE-Z11" id="dt5-x9-Cn3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G6d-ad-dnf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5692" y="118"/>
+        </scene>
         <!--Simple Collection View Controller-->
         <scene sceneID="tWH-YD-mTu">
             <objects>

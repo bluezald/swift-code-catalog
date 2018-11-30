@@ -19,6 +19,7 @@
 		4FC0C9912174A4E200F8AF92 /* SimpleSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0C9902174A4E200F8AF92 /* SimpleSearchTableViewController.swift */; };
 		4FC0C9942174A52500F8AF92 /* Datastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0C9932174A52500F8AF92 /* Datastore.swift */; };
 		4FC8461021463839008EDB94 /* ARC.md in Resources */ = {isa = PBXBuildFile; fileRef = 4FC8460F21463839008EDB94 /* ARC.md */; };
+		4FC8927F21B136F5000CA023 /* EventKitUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC8927E21B136F5000CA023 /* EventKitUIViewController.swift */; };
 		4FCFE21F2179AA53001E1879 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFE21E2179AA53001E1879 /* User.swift */; };
 		4FCFE277217CA82F001E1879 /* SimpleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFE276217CA82F001E1879 /* SimpleCollectionViewController.swift */; };
 		4FCFE27A217CC2B8001E1879 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFE279217CC2B8001E1879 /* ContactsViewController.swift */; };
@@ -62,6 +63,7 @@
 		4FC0C9932174A52500F8AF92 /* Datastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datastore.swift; sourceTree = "<group>"; };
 		4FC8460E214637FE008EDB94 /* ARC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ARC.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4FC8460F21463839008EDB94 /* ARC.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ARC.md; sourceTree = "<group>"; };
+		4FC8927E21B136F5000CA023 /* EventKitUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventKitUIViewController.swift; sourceTree = "<group>"; };
 		4FCFE21E2179AA53001E1879 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4FCFE276217CA82F001E1879 /* SimpleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewController.swift; sourceTree = "<group>"; };
 		4FCFE279217CC2B8001E1879 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
@@ -237,6 +239,14 @@
 			path = ARC;
 			sourceTree = "<group>";
 		};
+		4FC8927D21B136D4000CA023 /* EventKitUI */ = {
+			isa = PBXGroup;
+			children = (
+				4FC8927E21B136F5000CA023 /* EventKitUIViewController.swift */,
+			);
+			path = EventKitUI;
+			sourceTree = "<group>";
+		};
 		4FCFE21D2179AA47001E1879 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -327,6 +337,7 @@
 				4FCFE278217CC1E1001E1879 /* Contacts */,
 				4F24C3D021A64A46001231AE /* ContactsUI */,
 				4FCFE27B217DE6B6001E1879 /* EventKit */,
+				4FC8927D21B136D4000CA023 /* EventKitUI */,
 				4FCFE27C217DE7D6001E1879 /* MapKit */,
 			);
 			path = AppServices;
@@ -480,6 +491,7 @@
 				4F9F0134217826A100C0F41C /* Reqres.swift in Sources */,
 				4FC0C9912174A4E200F8AF92 /* SimpleSearchTableViewController.swift in Sources */,
 				4FCFE27A217CC2B8001E1879 /* ContactsViewController.swift in Sources */,
+				4FC8927F21B136F5000CA023 /* EventKitUIViewController.swift in Sources */,
 				4FE28B5D20FEDC220038D9D8 /* AppDelegate.swift in Sources */,
 				4F67D0282161F50400027E7B /* SimpleTableViewController.swift in Sources */,
 				4F61F590218891CE00E41E55 /* MapsViewController.swift in Sources */,

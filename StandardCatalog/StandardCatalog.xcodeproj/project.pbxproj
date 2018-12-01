@@ -33,6 +33,7 @@
 		4FE28B7220FEDC220038D9D8 /* StandardCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE28B7120FEDC220038D9D8 /* StandardCatalogTests.swift */; };
 		4FEB4D232199A6870030008D /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB4D222199A6870030008D /* SpeechManager.swift */; };
 		4FEB4D252199A6A10030008D /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEB4D242199A6A10030008D /* SpeechViewController.swift */; };
+		4FF09ACC21B2D58F004EB22F /* NSCodingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF09ACB21B2D58E004EB22F /* NSCodingViewController.swift */; };
 		4FF4191B2105FAAE0086CFB7 /* VisualEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4191A2105FAAE0086CFB7 /* VisualEffectViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		4FE28B7320FEDC220038D9D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FEB4D222199A6870030008D /* SpeechManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
 		4FEB4D242199A6A10030008D /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
+		4FF09ACB21B2D58E004EB22F /* NSCodingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCodingViewController.swift; sourceTree = "<group>"; };
 		4FF4191A2105FAAE0086CFB7 /* VisualEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +194,7 @@
 		4FC0C9972174A73700F8AF92 /* Caching */ = {
 			isa = PBXGroup;
 			children = (
+				4FF09ACB21B2D58E004EB22F /* NSCodingViewController.swift */,
 			);
 			path = Caching;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				4FCFE21F2179AA53001E1879 /* User.swift in Sources */,
 				4F24A3B221A9786500B27261 /* KeychainServicesViewController.swift in Sources */,
 				4FDB69912176EB3C0017383F /* ListViewController.swift in Sources */,
+				4FF09ACC21B2D58F004EB22F /* NSCodingViewController.swift in Sources */,
 				4FCFE277217CA82F001E1879 /* SimpleCollectionViewController.swift in Sources */,
 				4FEB4D252199A6A10030008D /* SpeechViewController.swift in Sources */,
 				4F24C3D221A64AFE001231AE /* ContactsUIViewController.swift in Sources */,

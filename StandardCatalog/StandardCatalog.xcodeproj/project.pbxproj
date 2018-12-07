@@ -10,6 +10,7 @@
 		4F1E6E1C218E9ABF00015EA3 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1E6E1B218E9ABF00015EA3 /* ChatTableViewController.swift */; };
 		4F24A3B221A9786500B27261 /* KeychainServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F24A3B121A9786500B27261 /* KeychainServicesViewController.swift */; };
 		4F24C3D221A64AFE001231AE /* ContactsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F24C3D121A64AFE001231AE /* ContactsUIViewController.swift */; };
+		4F2948F621BA599500D48EB4 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2948F521BA599500D48EB4 /* Creature.swift */; };
 		4F61F58A218594C800E41E55 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61F589218594C800E41E55 /* RemindersViewController.swift */; };
 		4F61F590218891CE00E41E55 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61F58F218891CE00E41E55 /* MapsViewController.swift */; };
 		4F63758221A12B1D0040E9FE /* Locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F63758121A12B1D0040E9FE /* Locations.json */; };
@@ -51,6 +52,7 @@
 		4F1E6E1B218E9ABF00015EA3 /* ChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
 		4F24A3B121A9786500B27261 /* KeychainServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainServicesViewController.swift; sourceTree = "<group>"; };
 		4F24C3D121A64AFE001231AE /* ContactsUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsUIViewController.swift; sourceTree = "<group>"; };
+		4F2948F521BA599500D48EB4 /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
 		4F6123E92158864E00AC204A /* Codable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Codable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4F6123EA21588B8400AC204A /* GCD.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GCD.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4F61F589218594C800E41E55 /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 				4F24C3D121A64AFE001231AE /* ContactsUIViewController.swift */,
 			);
 			path = ContactsUI;
+			sourceTree = "<group>";
+		};
+		4F2948F421BA598000D48EB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4F2948F521BA599500D48EB4 /* Creature.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4F7F13B421722ED0004EE508 /* Fundamentals */ = {
@@ -194,6 +204,7 @@
 		4FC0C9972174A73700F8AF92 /* Caching */ = {
 			isa = PBXGroup;
 			children = (
+				4F2948F421BA598000D48EB4 /* Models */,
 				4FF09ACB21B2D58E004EB22F /* NSCodingViewController.swift */,
 			);
 			path = Caching;
@@ -497,6 +508,7 @@
 				4FC8927F21B136F5000CA023 /* EventKitUIViewController.swift in Sources */,
 				4FE28B5D20FEDC220038D9D8 /* AppDelegate.swift in Sources */,
 				4F67D0282161F50400027E7B /* SimpleTableViewController.swift in Sources */,
+				4F2948F621BA599500D48EB4 /* Creature.swift in Sources */,
 				4F61F590218891CE00E41E55 /* MapsViewController.swift in Sources */,
 				4FDB69932176EB500017383F /* ProfileViewController.swift in Sources */,
 				4FCFE21F2179AA53001E1879 /* User.swift in Sources */,

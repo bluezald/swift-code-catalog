@@ -68,6 +68,13 @@ extension MainViewController {
       default:
         break
       }
+    case 3: // Caching
+      switch indexPath.row {
+      case 1:
+        controller = NSCodingViewController()
+      default:
+        break
+      }
     case 4: // Security
       switch indexPath.row {
       case 0:

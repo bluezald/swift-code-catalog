@@ -44,8 +44,6 @@ class CreatureRecord: NSObject {
   
   enum Keys: String {
     case dataFile = "Data.plist"
-    case thumbImageFile = "thumbImage.png"
-    case fullImageFile = "fullImage.png"
   }
   
   private var _data: Creature?
@@ -65,38 +63,6 @@ class CreatureRecord: NSObject {
     }
   }
   
-  private var _thumbImage: UIImage?
-  var thumbImage: UIImage? {
-    get {
-      if _thumbImage != nil { return _thumbImage }
-      if docPath == nil { return nil }
-      
-      let thumbImageURL = docPath!.appendingPathComponent(Keys.thumbImageFile.rawValue)
-      guard let imageData = try? Data(contentsOf: thumbImageURL) else { return nil }
-      _thumbImage = UIImage(data: imageData)
-      return _thumbImage
-    }
-    set {
-      _thumbImage = newValue
-    }
-  }
-  
-  private var _fullImage: UIImage?
-  var fullImage: UIImage? {
-    get {
-      if _fullImage != nil { return _fullImage }
-      if docPath == nil { return nil }
-      
-      let fullImageURL = docPath!.appendingPathComponent(Keys.fullImageFile.rawValue)
-      guard let imageData = try? Data(contentsOf: fullImageURL) else { return nil }
-      _fullImage = UIImage(data: imageData)
-      return _fullImage
-    }
-    set {
-      _fullImage = newValue
-    }
-  }
-  
   var docPath: URL?
   
   init(docPath: URL) {
@@ -104,13 +70,10 @@ class CreatureRecord: NSObject {
     self.docPath = docPath
   }
   
-  init(title: String, rating: Float, thumbImage: UIImage?, fullImage: UIImage?) {
+  init(title: String, rating: Float) {
     super.init()
     _data = Creature(title: title, rating: rating)
-    self.thumbImage = thumbImage
-    self.fullImage = fullImage
     saveData()
-    saveImages()
   }
   
   func createDataPath() throws {
@@ -131,7 +94,7 @@ class CreatureRecord: NSObject {
     
     let dataURL = docPath!.appendingPathComponent(Keys.dataFile.rawValue)
     
-    let codedData = try! NSKeyedArchiver.archivedData(withRootObject: data, requiringSecureCoding: true)
+    let codedData = try! NSKeyedArchiver.archivedData(withRootObject: data, requiringSecureCoding: false)
     
     do {
       try codedData.write(to: dataURL)
@@ -150,25 +113,6 @@ class CreatureRecord: NSObject {
     }
   }
   
-  func saveImages() {
-    if _fullImage == nil || _thumbImage == nil { return }
-    
-    do {
-      try createDataPath()
-    }catch {
-      print("Couldn't create save Folder. " + error.localizedDescription)
-      return
-    }
-    
-    let thumbImageURL = docPath!.appendingPathComponent(Keys.thumbImageFile.rawValue)
-    let fullImageURL = docPath!.appendingPathComponent(Keys.fullImageFile.rawValue)
-    
-    let thumbImageData = UIImagePNGRepresentation(_thumbImage!)
-    let fullImageData = UIImagePNGRepresentation(_fullImage!)
-    
-    try! thumbImageData!.write(to: thumbImageURL)
-    try! fullImageData!.write(to: fullImageURL)
-  }
 }
 
 class CreatureDatabase: NSObject {

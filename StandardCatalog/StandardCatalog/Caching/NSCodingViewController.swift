@@ -34,13 +34,13 @@ class NSCodingViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
     navigationItem.leftBarButtonItem = editButtonItem
     
     let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped(_:)))
     navigationItem.rightBarButtonItem = addButton
     
     title = "Creatures"
+    self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CreatureTableViewCell")
     
     loadCreatures()
   }
@@ -51,7 +51,7 @@ class NSCodingViewController: UITableViewController {
     if segue.identifier == "showDetail" {
       if let indexPath = tableView.indexPathForSelectedRow {
         let object = creatures[indexPath.row]
-        let controller = segue.destination as! DetailViewController
+        let controller = segue.destination as! NSCodingDetailViewController
         controller.detailItem = object
       }
     }
@@ -70,7 +70,7 @@ class NSCodingViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+    let cell = tableView.dequeueReusableCell(withIdentifier:"CreatureTableViewCell", for: indexPath)
     
     let creature = creatures[indexPath.row]
     cell.textLabel!.text = creature.data?.title
@@ -90,25 +90,20 @@ class NSCodingViewController: UITableViewController {
     }
   }
   
-  // MARK: - IBActions
-  
   @objc func addTapped(_ sender: Any) {
-//    let newDoc = ScaryCreatureDoc(title: "New Creature", rating: 0, thumbImage: nil, fullImage: nil)
+    
+//    let newDoc = CreatureRecord(title: "New Creature", rating: 0)
 //    creatures.append(newDoc)
 //
 //    let newIndexPath = IndexPath(row: creatures.count - 1, section: 0)
 //    tableView.insertRows(at: [newIndexPath], with: .automatic)
 //    tableView.selectRow(at: newIndexPath, animated: true, scrollPosition: .middle)
 //    performSegue(withIdentifier: "showDetail", sender: self)
-//  }
+  }
 }
 
-}
-
-class DetailViewController: UIViewController {
-  @IBOutlet weak var detailDescriptionLabel: UILabel!
+class NSCodingDetailViewController: UIViewController {
   @IBOutlet weak var titleField: UITextField!
-  @IBOutlet weak var imageView: UIImageView!
   
   private var picker: UIImagePickerController!
   
@@ -137,8 +132,6 @@ class DetailViewController: UIViewController {
     
     if let detailItem = detailItem {
       titleField.text = detailItem.data!.title
-      imageView.image = detailItem.fullImage
-      detailDescriptionLabel.isHidden = imageView.image != nil
     }
   }
   
@@ -153,30 +146,18 @@ class DetailViewController: UIViewController {
   
 }
 
-extension DetailViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension NSCodingDetailViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
   func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
     dismiss(animated: true, completion: nil)
   }
   
   private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
-    let fullImage = info[UIImagePickerControllerOriginalImage as NSString] as! UIImage
-    let concurrentQueue = DispatchQueue(label: "ResizingQueue", attributes: .concurrent)
     
-    concurrentQueue.async {
-      let thumbImage = fullImage.resized(newSize: CGSize(width: 107, height: 107))
-      
-      DispatchQueue.main.async {
-        self.detailItem?.fullImage = fullImage
-        self.detailItem?.thumbImage = thumbImage
-        self.imageView.image = fullImage
-        self.detailItem?.saveImages()
-      }
-    }
     dismiss(animated: true, completion: nil)
   }
 }
 
-extension DetailViewController: UITextFieldDelegate {
+extension NSCodingDetailViewController: UITextFieldDelegate {
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     textField.resignFirstResponder()
     return true

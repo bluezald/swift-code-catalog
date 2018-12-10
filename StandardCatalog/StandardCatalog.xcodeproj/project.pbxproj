@@ -17,6 +17,7 @@
 		4F63758521A12BAE0040E9FE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F63758421A12BAE0040E9FE /* Location.swift */; };
 		4F67D0282161F50400027E7B /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67D0272161F50400027E7B /* SimpleTableViewController.swift */; };
 		4F9F0134217826A100C0F41C /* Reqres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9F0133217826A100C0F41C /* Reqres.swift */; };
+		4FB5B96421BEB58A008F0273 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB5B96321BEB58A008F0273 /* SettingsViewController.swift */; };
 		4FC0C9912174A4E200F8AF92 /* SimpleSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0C9902174A4E200F8AF92 /* SimpleSearchTableViewController.swift */; };
 		4FC0C9942174A52500F8AF92 /* Datastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0C9932174A52500F8AF92 /* Datastore.swift */; };
 		4FC8461021463839008EDB94 /* ARC.md in Resources */ = {isa = PBXBuildFile; fileRef = 4FC8460F21463839008EDB94 /* ARC.md */; };
@@ -62,6 +63,7 @@
 		4F67D0272161F50400027E7B /* SimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
 		4F90D0BA2169080C00A11F5D /* Date.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Date.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4F9F0133217826A100C0F41C /* Reqres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reqres.swift; sourceTree = "<group>"; };
+		4FB5B96321BEB58A008F0273 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		4FC0C9902174A4E200F8AF92 /* SimpleSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSearchTableViewController.swift; sourceTree = "<group>"; };
 		4FC0C9932174A52500F8AF92 /* Datastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datastore.swift; sourceTree = "<group>"; };
 		4FC8460E214637FE008EDB94 /* ARC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ARC.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -206,6 +208,7 @@
 			children = (
 				4F2948F421BA598000D48EB4 /* Models */,
 				4FF09ACB21B2D58E004EB22F /* NSCodingViewController.swift */,
+				4FB5B96321BEB58A008F0273 /* SettingsViewController.swift */,
 			);
 			path = Caching;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				4FEB4D252199A6A10030008D /* SpeechViewController.swift in Sources */,
 				4F24C3D221A64AFE001231AE /* ContactsUIViewController.swift in Sources */,
 				4F1E6E1C218E9ABF00015EA3 /* ChatTableViewController.swift in Sources */,
+				4FB5B96421BEB58A008F0273 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

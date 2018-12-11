@@ -70,6 +70,8 @@ extension MainViewController {
       }
     case 3: // Caching
       switch indexPath.row {
+      case 0:
+        controller = self.storyboard?.instantiateViewController(withIdentifier: "SettingsViewController")
       case 1:
         controller = NSCodingViewController()
       default:

@@ -8,10 +8,36 @@
 
 import UIKit
 
+
+
 class SettingsViewController: UITableViewController {
+  
+  @IBOutlet weak var securityEmailSwitch: UISwitch!
+  @IBOutlet weak var securityTextMessageSwitch: UISwitch!
+  
+  @IBOutlet weak var promotionsEmailSwitch: UISwitch!
+  @IBOutlet weak var promotionsTextMessageSwitch: UISwitch!
+  @IBOutlet weak var promotionsPhoneCallsSwitch: UISwitch!
+  
+  private let defaults = UserDefaults.standard
+  
+  
+  enum Notifications {
+    enum SecurityUpdates: String {
+      case email = "Notifications.Security.Email"
+      case textMessage = "Notifications.Security.TextMessage"
+    }
+    
+    enum Promotions: String {
+      case email = "Notifications.Promotions.Email"
+      case textMessage = "Notifications.Promotions.TextMessage"
+      case phoneCalls = "Notifications.Promotions.Phone"
+    }
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    loadFromDefaults()
     
   }
   
@@ -39,5 +65,25 @@ extension SettingsViewController {
     
     tableView.deselectRow(at: indexPath, animated: true)
   }
+  
+}
+
+extension SettingsViewController {
+  
+  func loadFromDefaults() {
+    
+    securityEmailSwitch.setOn(defaults.bool(forKey: Notifications.SecurityUpdates.email.rawValue), animated: false)
+    
+    securityTextMessageSwitch.setOn(defaults.bool(forKey: Notifications.SecurityUpdates.textMessage.rawValue), animated: false)
+    
+    promotionsEmailSwitch.setOn(defaults.bool(forKey: Notifications.Promotions.email.rawValue), animated: false)
+    
+    promotionsTextMessageSwitch.setOn(defaults.bool(forKey: Notifications.Promotions.textMessage.rawValue), animated: false)
+    
+    promotionsPhoneCallsSwitch.setOn(defaults.bool(forKey: Notifications.Promotions.phoneCalls.rawValue), animated: false)
+    
+  }
+  
+  
   
 }

@@ -41,6 +41,32 @@ class SettingsViewController: UITableViewController {
     
   }
   
+  @IBAction func switchSecurityEmail(_ sender: UISwitch) {
+    defaults.set(sender.isOn, forKey: Notifications.SecurityUpdates.email.rawValue)
+    defaults.synchronize()
+  }
+  
+  @IBAction func switchSecurityText(_ sender: UISwitch) {
+    defaults.set(sender.isOn, forKey: Notifications.SecurityUpdates.textMessage.rawValue)
+    defaults.synchronize()
+  }
+  
+  @IBAction func switchPromotionsEmail(_ sender: UISwitch) {
+    defaults.set(sender.isOn, forKey: Notifications.Promotions.email.rawValue)
+    defaults.synchronize()
+  }
+  
+  @IBAction func switchPromotionsText(_ sender: UISwitch) {
+    defaults.set(sender.isOn, forKey: Notifications.Promotions.textMessage.rawValue)
+    defaults.synchronize()
+  }
+  
+  @IBAction func switchPromotionsPhone(_ sender: UISwitch) {
+    defaults.set(sender.isOn, forKey: Notifications.Promotions.phoneCalls.rawValue)
+    defaults.synchronize()
+  }
+  
+  
 }
 
 extension SettingsViewController {

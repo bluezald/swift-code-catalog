@@ -720,6 +720,9 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OW8-4X-R36">
                                                     <rect key="frame" x="319" y="9.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="switchSecurityEmail:" destination="qla-aA-SuW" eventType="valueChanged" id="Fdv-o9-JwG"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2Z-pR-pkE">
                                                     <rect key="frame" x="23" y="14.5" width="41" height="21"/>
@@ -745,6 +748,9 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m9X-7i-zvA">
                                                     <rect key="frame" x="319" y="9.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="switchSecurityText:" destination="qla-aA-SuW" eventType="valueChanged" id="6Cn-Ax-qWA"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQz-I5-dMU">
                                                     <rect key="frame" x="23" y="14.5" width="106" height="21"/>
@@ -774,6 +780,9 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gVI-Hn-2pQ">
                                                     <rect key="frame" x="319" y="9.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="switchPromotionsEmail:" destination="qla-aA-SuW" eventType="valueChanged" id="1bS-qC-wLZ"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytI-Jl-TbW">
                                                     <rect key="frame" x="23" y="14.5" width="41" height="21"/>
@@ -799,6 +808,9 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFj-xH-8KL">
                                                     <rect key="frame" x="319" y="9.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="switchPromotionsText:" destination="qla-aA-SuW" eventType="valueChanged" id="otW-TH-Ux7"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxz-p6-hoH">
                                                     <rect key="frame" x="23" y="14.5" width="106" height="21"/>
@@ -824,6 +836,9 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GM3-ch-AW0">
                                                     <rect key="frame" x="319" y="9.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="switchPromotionsPhone:" destination="qla-aA-SuW" eventType="valueChanged" id="zY2-yX-K9e"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone calls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bD-Gy-QKX">
                                                     <rect key="frame" x="23" y="14.5" width="88" height="21"/>

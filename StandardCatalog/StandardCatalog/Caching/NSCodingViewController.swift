@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIImage {
+  
   func resized(newSize: CGSize) -> UIImage {
     let horizontalRatio = newSize.width / size.width
     let verticalRatio = newSize.height / size.height
@@ -34,7 +35,7 @@ class NSCodingViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    navigationItem.leftBarButtonItem = editButtonItem
+    // navigationItem.leftBarButtonItem = editButtonItem
     
     let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped(_:)))
     navigationItem.rightBarButtonItem = addButton
